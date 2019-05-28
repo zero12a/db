@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 172.17.0.1
--- 생성 시간: 19-05-28 06:24
+-- 생성 시간: 19-05-28 23:55
 -- 서버 버전: 5.7.20
 -- PHP 버전: 7.1.0
 
@@ -654,7 +654,7 @@ INSERT INTO `CG_OBJINFOA` (`OBJTYPE`, `OBJDSEQ`, `OBJASEQ`, `OBJAORD`, `OBJDESC`
 ('BODYINIT', 166, 163, 10, '시작', '<?php\n \nclass StdDao\n{\n	function __construct(){\n		alog(\"StdDao-__construct\");\n	}\n	function __destruct(){\n		alog(\"StdDao-__destruct\");\n	}\n	function __toString(){\n		alog(\"StdDao-__toString\");\n	}', '', '', '', 'R', NULL, 'N', '20141118162726', NULL),
 ('BODYINIT', 166, 164, 20, 'SQL', '', '', 'PGMGRP.FNC.SQL', '', 'L', NULL, 'N', '20141118162726', '20141118163316'),
 ('BODYINIT', 166, 165, 30, '종료', '}\n                                                             \n?>', '', '', '', 'R', NULL, 'N', '20141118162726', NULL),
-('ASVRCTL', 171, 169, 20, 'IO받기', '', '', 'PGMIO', 'OBJTYPE!=ROWCHECK', 'L', '', 'N', '20141119060907', '20180325155735'),
+('ASVRCTL', 171, 169, 20, 'IO받기', '', '', 'PGMIO', 'OBJTYPE!=ROWCHECK&&OBJTYPE!=INPUTCHECK', 'L', '', 'N', '20141119060907', '20190528205351'),
 ('ASVRCTL', 175, 170, 10, '처리', '	case \"{G.GRPID}_{F.FNCID}\" :\n  		echo $objService->go{G.GRPID#C}{F.FNCID#C}(); //{G.GRPNM}, {F.FNCNM}\n  		break;\n', '', 'PGMFNC', 'FNCTYPE=NOT NULL', 'L', '', 'N', '20141119060944', '20180309110859'),
 ('ASVRDAO', 179, 171, 60, '값리턴', '		return $RtnVal;\n    }  \n', '', '', '', 'R', NULL, 'N', '20141119061135', '20141119063820'),
 ('ASVRDAO', 179, 172, 10, '함수시작', '	//{S.SQLNM}    \n	public function {S.SQLID}($req){\n		//조회\n		$RtnVal = null;\n		$RtnVal[\"FNCTYPE\"] = \"{S.CRUD}\";//CRUD \n', '', '', '', 'R', '', 'N', '20141119063820', '20160407131119'),
@@ -788,9 +788,9 @@ INSERT INTO `CG_OBJINFOA` (`OBJTYPE`, `OBJDSEQ`, `OBJASEQ`, `OBJAORD`, `OBJDESC`
 ('TEXTVIEW', 280, 331, 40, '숨기기', 'display:none', '', '', '', 'R', 'I.HIDDENYN=Y', '', '20171214122412', '20171214122600'),
 ('TEXTVIEW', 280, 332, 50, '', '\">\n', '', '', '', 'R', '', '', '20171214122412', '20171214122526'),
 ('FORMVIEW', 244, 333, 20, 'SQL루프', '				case \"{S.CRUD}\":////{S.SQLNM}\n					//추가\n					$FORMVIEW[\"SQL\"][$FORMVIEW[\"FNCTYPE\"]] = $this->DAO->{S.SQLID}($REQ); \n					break;\n', '', 'PGMSQLR', '', 'L', '', '', '20171214225830', '20171221231759'),
-('FORMVIEW', 244, 334, 30, '', '				default:\n					//처리 결과 리턴\n					$rtnVal->RTN_CD = \"500\";\n					$rtnVal->ERR_CD = \"593\";\n					echo json_encode($rtnVal);\n					return;	\n			}\n', '', '', '', 'R', '', '', '20171214225830', '20181015204856'),
-('FORMVIEW', 197, 335, 10, 'FILE 있을때', '	var formview_data = $(\"#formview{V.GRPID}\").serializeArray();\n    $.each(formview_data,function(i,nmval){\n        formData.append(nmval.name,nmval.value);\n	});\n', '', '', '', 'R', 'V.IO_FILE_YN=Y', '', '20171218230944', '20171219224200');
+('FORMVIEW', 244, 334, 30, '', '				default:\n					//처리 결과 리턴\n					$rtnVal->RTN_CD = \"500\";\n					$rtnVal->ERR_CD = \"593\";\n					echo json_encode($rtnVal);\n					return;	\n			}\n', '', '', '', 'R', '', '', '20171214225830', '20181015204856');
 INSERT INTO `CG_OBJINFOA` (`OBJTYPE`, `OBJDSEQ`, `OBJASEQ`, `OBJAORD`, `OBJDESC`, `SRCTXT`, `SPTTXT`, `INPUT`, `PARAM`, `SRCTYPE`, `FILTER`, `DEBUGYN`, `ADDDT`, `MODDT`) VALUES
+('FORMVIEW', 197, 335, 10, 'FILE 있을때', '	var formview_data = $(\"#formview{V.GRPID}\").serializeArray();\n    $.each(formview_data,function(i,nmval){\n        formData.append(nmval.name,nmval.value);\n	});\n', '', '', '', 'R', 'V.IO_FILE_YN=Y', '', '20171218230944', '20171219224200'),
 ('FORMVIEW', 197, 336, 20, 'FILE 없을때', '	//IO_FILE_YN = {V.IO_FILE_YN} 폼의 모든값 구하기\n	var param{V.GRPID} = $( \"#formview{V.GRPID}\" ).serialize();\n	alog(\"param{V.GRPID}:\" + param{V.GRPID});', '', '', '', 'R', 'V.IO_FILE_YN=N', '', '20171218230945', '20171218233659'),
 ('FORMVIEW', 11, 337, 10, '파일 없을때', '//IO_FILE_YN = {F.IO_FILE_YN}	\n	', '', '', '', 'R', 'F.IO_FILE_YN=N', '', '20171218231844', '20190528041332'),
 ('FORMVIEW', 11, 338, 20, '파일 있을때', '	//IO_FILE_YN = {F.IO_FILE_YN}	\nfunction {G.GRPID}_{F.FNCID}(token){	\n	alog(\"{G.GRPID}_{F.FNCID}---------------start\");\n\n	if( !( $(\"#{G.GRPID}-CTLCUD\").val() == \"C\" || $(\"#{G.GRPID}-CTLCUD\").val() == \"U\") ){\n		alert(\"신규 또는 수정 모드 진입 후 저장할 수 있습니다.\")\n		return;\n	}\n\n	//전송 데이터 객체 만들기\n	var sendFormData = new FormData($(\"#formview{G.GRPID}\")[0]);\n\n	//컨디션 데이터 추가하기\n	conditionData = new FormData($(\"#condition\")[0]);\n	for(var pair of conditionData.entries()) {\n		sendFormData.append(pair[0],pair[1]);\n		//console.log(pair[0]+ \', \'+ pair[1]); \n	}\n\n	$.ajax({\n		type : \"POST\",\n		url : url_{G.GRPID}_{F.FNCID} + \"&TOKEN=\" + token,\n		data : sendFormData,\n		processData: false,\n		contentType: false,\n		success: function(tdata){\n			alog(tdata);\n			data = jQuery.parseJSON(tdata);\n			//alert(data);\n			if(data && data.RTN_CD == \"200\"){\n				msgNotice(\"정상적으로 저장되었습니다.\",1);\n			}else{\n				msgError(\"오류가 발생했습니다(\"+ data.ERR_CD + \").\" + data.RTN_MSG,3);\n			}\n		},\n		error: function(error){\n			alog(\"Error:\");\n			alog(error);\n		}\n	});\n}\n', '', '', '', 'R', 'F.IO_FILE_YN=Y', '', '20171218231844', '20190528041332'),
@@ -985,11 +985,11 @@ INSERT INTO `CG_OBJINFOA` (`OBJTYPE`, `OBJDSEQ`, `OBJASEQ`, `OBJAORD`, `OBJDESC`
 ('FORMVIEW', 244, 528, 50, '리턴', '			$tmpVal = makeFormviewSaveJson($FORMVIEW,$this->DB);\n			array_push($_RTIME,array(\"[TIME 50.DB_TIME {V.SVCGRPID}]\",microtime(true)));\n\n			$al->GRPID = $grpId;\n			array_push($rtnVal->GRP_DATA, $tmpVal);\n\n			//$rtnVal = makeFormviewSaveJson($FORMVIEW,$this->DB);\n\n		}//C,U 일때만 DB처리\n', '', '', '', 'R', '', '', '20181015204856', '20181015204901'),
 ('FORMVIEW', 252, 529, 30, '리턴', '		$tmpVal = makeFormviewSaveJson($FORMVIEW,$this->DB);\n		array_push($_RTIME,array(\"[TIME 50.DB_TIME {V.SVCGRPID}]\",microtime(true)));\n\n		$tmpVal->GRPID = $grpId;\n		array_push($rtnVal->GRP_DATA, $tmpVal);\n', '', '', '', 'R', '', '', '20181015210911', NULL),
 ('FORMVIEW', 252, 530, 20, '필수입력겂검사', '		//필수 여부 검사\n		$tmpVal = requireFormviewSave($FORMVIEW[\"SQL\"],$FORMVIEW[\"FNCTYPE\"] );\n		if($tmpVal->RTN_CD == \"500\"){\n			alog(\"requireFormviewSave - fail.\");\n			$tmpVal->GRPID = $grpId;\n			echo json_encode($tmpVal);\n			exit;\n		}\n', '', '', '', 'R', '', '', '20181015210912', '20181015211442'),
-('CHARTBAR', 363, 531, 35, '전송 값', '', '', 'PGMGRP.REF', '', 'L', '', '', '20190322214113', NULL),
+('CHARTBAR', 363, 531, 35, '전송 값', '', '', 'PGMGRP.REF', '', 'L', '', '', '20190322214113', NULL);
+INSERT INTO `CG_OBJINFOA` (`OBJTYPE`, `OBJDSEQ`, `OBJASEQ`, `OBJAORD`, `OBJDESC`, `SRCTXT`, `SPTTXT`, `INPUT`, `PARAM`, `SRCTYPE`, `FILTER`, `DEBUGYN`, `ADDDT`, `MODDT`) VALUES
 ('CHARTBAR2Y', 401, 532, 35, '', '', '', 'PGMGRP.REF', '', 'L', '', '', '20190322214348', NULL),
 ('CHARTPIE', 382, 533, 35, '', '', '', 'PGMGRP.REF', '', 'L', '', '', '20190322214502', '20190322215155'),
-('CHARTPIE', 380, 534, 25, '컬럼정보', '', '', '', '', 'R', '', '', '20190325203158', NULL);
-INSERT INTO `CG_OBJINFOA` (`OBJTYPE`, `OBJDSEQ`, `OBJASEQ`, `OBJAORD`, `OBJDESC`, `SRCTXT`, `SPTTXT`, `INPUT`, `PARAM`, `SRCTYPE`, `FILTER`, `DEBUGYN`, `ADDDT`, `MODDT`) VALUES
+('CHARTPIE', 380, 534, 25, '컬럼정보', '', '', '', '', 'R', '', '', '20190325203158', NULL),
 ('CHARTBAR', 364, 535, 25, '컬럼목록', '', '', '', '', 'R', '', '', '20190325211759', '20190325222003'),
 ('CHARTBAR2Y', 399, 536, 25, '컬럼목록', '', '', '', '', 'R', '', '', '20190325221854', NULL),
 ('INPUTRADIO', 406, 537, 10, '', '			</DIV><!--is_br_tab end-->\n			<DIV class=\"OBJ_BR\"></DIV>\n			<DIV class=\"CON_LINE\" is_br_tag>\n', '', '', '', 'R', 'I.BRYN=Y', '', '20190526143634', '20190526143732'),
@@ -1001,7 +1001,10 @@ INSERT INTO `CG_OBJINFOA` (`OBJTYPE`, `OBJDSEQ`, `OBJASEQ`, `OBJAORD`, `OBJDESC`
 ('INPUTCHECK', 421, 546, 20, '', '			<!--D101: STARTTXT, TAG-->\n			<!--I.COLID : {I.COLID}-->\n', '', '', '', 'R', '', '', '20190528051309', NULL),
 ('INPUTCHECK', 421, 547, 30, '', '				<div class=\"CON_OBJGRP\" style=\"', '', '', '', 'R', '', '', '20190528051309', NULL),
 ('INPUTCHECK', 421, 548, 40, '숨기기', 'display:none', '', '', '', 'R', '', '', '20190528051309', NULL),
-('INPUTCHECK', 421, 549, 50, '', '\">\n', '', '', '', 'R', 'I.HIDDENYN=Y', '', '20190528051309', NULL);
+('INPUTCHECK', 421, 549, 50, '', '\">\n', '', '', '', 'R', 'I.HIDDENYN=Y', '', '20190528051309', NULL),
+('ASVRCTL', 432, 550, 10, 'checkbox', '$REQ[\"{G.GRPID}-{I.COLID}\"] = $_POST[\"{G.GRPID}-{I.COLID}\"];	//checkbox 받기\n$REQ[\"{G.GRPID}-{I.COLID}\"] = filterGridChk($REQ[\"{G.GRPID}-{I.COLID}\"],\"{I.DATATYPE}\",{I.DATASIZE},\"{I.VALID_VALIDTYPE}\",\"/{I.VALID_MATSTR}/\");//{I.COLID} 입력값검증\n', '', 'PGMIO', 'a.OBJTYPE=INPUTCHECK', 'L', '', '', '20190528204917', '20190528205314'),
+('ASVRCTL', 433, 551, 10, 'checkbox', '$REQ[\"{G.GRPID}-{I.COLID}\"] = $_POST[\"{G.GRPID}-{I.COLID}\"];	//checkbox 받기\n$REQ[\"{G.GRPID}-{I.COLID}\"] = filterFormviewChk($REQ[\"{G.GRPID}-{I.COLID}\"],\"{I.DATATYPE}\",{I.DATASIZE},\"{I.VALID_VALIDTYPE}\",\"/{I.VALID_MATSTR}/\");//{I.COLID} 입력값검증\n', '', 'PGMIO', 'a.OBJTYPE=INPUTCHECK', 'L', '', '', '20190528215514', '20190528215550'),
+('GRID', 4, 552, 25, 'radio,checkbox 추가', '', '', 'PGMIO.CONDITION.OBJ', 'OBJVAL=GETVAL_CONDITION', 'C', '', '', '20190528224301', '20190528225133');
 
 -- --------------------------------------------------------
 
@@ -1576,11 +1579,13 @@ INSERT INTO `CG_OBJINFOD` (`OBJTYPE`, `OBJDSEQ`, `FILETYPE`, `OBJVAL`, `OBJVALTY
 ('INPUTCHECK', 424, 'HTML', 'LBLENDTXT', 'LBL', 40, '', '', '					</div>\n ', '', '', '', 'R', '', '', '', '20190528050843', '20190528051131'),
 ('INPUTCHECK', 425, 'HTML', 'OBJSTARTTXT', 'OBJ', 50, '', '', '					<!-- style=\"width:{I.OBJWIDTH}{G.COLSIZETYPE_CDVAL};\"-->\n					<div class=\"CON_OBJECT\">\n ', '', '', '', 'R', '', '', '', '20190528050843', '20190528051131'),
 ('INPUTCHECK', 426, 'HTML', 'OBJTXT', 'OBJ', 60, '', '', '	<!--{I.COLID}오브젝트출력 checkbox-->\n	<div name=\"{G.GRPID}-{I.COLID}_holder\" id=\"{G.GRPID}-{I.COLID}_holder\"  style=\"width:{I.OBJWIDTH}{G.COLSIZETYPE_CDVAL};\"></div>\n', '', '', '', 'R', '', '', '', '20190528050843', '20190528051131'),
-('INPUTCHECK', 427, 'HTMLJS', 'GETVAL_CONDITION', '', 0, '', '', '		var tmpCheckVal = \"\";\n		$(\'input:checkbox[name=\"{P.CONDITION_GRPID}-{I.COLID}\"]\').each(function() {\n			if(this.checked){//checked 처리된 항목의 값\n			if(tmpCheckVal !=\"\") tmpCheckVal +=\",\";\n				tmpCheckVal += this.value;\n			}\n		});\n\n		sendFormData.append(\"P.CONDITION_GRPID}-{I.COLID}\",tmpCheckVal);//checkbox 선택값 가져오기.\n', '', '', '', 'R', '', '', '', '20190528051514', '20190528062030'),
+('INPUTCHECK', 427, 'HTMLJS', 'GETVAL_CONDITION', '', 0, '', '', '		var tmpCheckVal = \"\";\n		$(\'input:checkbox[name=\"{P.CONDITION_GRPID}-{I.COLID}\"]\').each(function() {\n			if(this.checked){//checked 처리된 항목의 값\n			if(tmpCheckVal !=\"\") tmpCheckVal +=\",\";\n				tmpCheckVal += this.value;\n			}\n		});\n\n		sendFormData.append(\"{P.CONDITION_GRPID}-{I.COLID}\",tmpCheckVal);//checkbox 선택값 가져오기.\n', '', '', '', 'R', '', '', '', '20190528051514', '20190528225353'),
 ('INPUTCHECK', 428, 'HTMLJS', 'GETVAL', '', 0, '', '', '		var tmpCheckVal = \"\";\n		$(\'input:checkbox[name=\"{G.GRPID}-{I.COLID}\"]\').each(function() {\n			if(this.checked){//checked 처리된 항목의 값\n			if(tmpCheckVal !=\"\") tmpCheckVal +=\",\";\n				tmpCheckVal += this.value;\n			}\n		});\n\n		sendFormData.append(\"{G.GRPID}-{I.COLID}\",tmpCheckVal);//checkbox 선택값 가져오기.\n', '', '', '', 'R', '', '', '', '20190528051514', '20190528061931'),
 ('INPUTCHECK', 429, 'HTMLJS', 'SETVAL', '', 0, '', '', '            var tmpResVal =  data.RTN_DATA.{I.COLID};\n            var tmpResArray = tmpResVal.split(\",\");\n			$(\"input:checkbox[name=\'{G.GRPID}-{I.COLID}\']\").prop(\"checked\",false);//전체 언체크\n            for(i=0;i<tmpResArray.length;i++){\n                $(\"input:checkbox[name=\'{G.GRPID}-{I.COLID}\'][value=\'\" + tmpResArray[i] + \"\']\").prop(\"checked\",true);\n            }\n', '', '', '', 'R', '', '', '', '20190528051514', '20190528060226'),
 ('INPUTCHECK', 430, 'HTMLJS', 'INITBODY', '', 0, '', '', '	//{G.GRPID}-{I.COLID} check 초기화 할게 있나.\n', '', '', '', 'R', '', '', '', '20190528051514', '20190528054258'),
-('INPUTCHECK', 431, 'HTMLJS', 'NEW', '', 0, '', '', '	//{G.GRPID}-{I.COLID}  NEW 신규일때 할게 있나?', '', '', '', 'R', '', '', '', '20190528051514', '20190528054258');
+('INPUTCHECK', 431, 'HTMLJS', 'NEW', '', 0, '', '', '	//{G.GRPID}-{I.COLID}  NEW 신규일때 할게 있나?', '', '', '', 'R', '', '', '', '20190528051514', '20190528054258'),
+('ASVRCTL', 432, 'SVRCTL', '', 'ETC', 155, '', '멀티밸류(check)컨디션', '', '', 'PGMGRP', 'GRPTYPE=CONDITION', 'L', '', '', '', '20190528204824', '20190528215447'),
+('ASVRCTL', 433, 'SVRCTL', '', 'ETC', 157, '', '멀티밸류(check)폼', '', '', 'PGMGRP', 'GRPTYPE=FORMVIEW', 'L', '', '', '', '20190528215447', NULL);
 
 --
 -- 덤프된 테이블의 인덱스
@@ -1630,7 +1635,7 @@ ALTER TABLE `CG_OBJINFOD`
 -- 테이블의 AUTO_INCREMENT `CG_OBJINFOA`
 --
 ALTER TABLE `CG_OBJINFOA`
-  MODIFY `OBJASEQ` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=550;
+  MODIFY `OBJASEQ` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=553;
 
 --
 -- 테이블의 AUTO_INCREMENT `CG_OBJINFOB`
@@ -1642,7 +1647,7 @@ ALTER TABLE `CG_OBJINFOB`
 -- 테이블의 AUTO_INCREMENT `CG_OBJINFOD`
 --
 ALTER TABLE `CG_OBJINFOD`
-  MODIFY `OBJDSEQ` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=432;
+  MODIFY `OBJDSEQ` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=434;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
