@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 172.17.0.1:3306
--- 생성 시간: 19-07-19 04:34
+-- 생성 시간: 19-07-19 04:38
 -- 서버 버전: 5.7.20
 -- PHP 버전: 7.1.0
 
@@ -1333,13 +1333,13 @@ INSERT INTO `CG_OBJINFOD` (`OBJTYPE`, `OBJDSEQ`, `FILETYPE`, `OBJVAL`, `OBJVALTY
 ('CONDITION', 73, 'HTML', 'ENDTXT', 'TAG', 200, '종료TAG', '', '		<div style=\"width:0px;height:0px;overflow: hidden\"></form></div>    \n		</div></div>\n	</div>\n', '', '', '', 'R', '', '', 'N', '20141103200228', '20190624225844'),
 ('CONDITION', 74, 'HTML', 'OBJTXT', 'OBJ', 90, '오브젝트리스트', '', '		<!--컨디션 IO리스트-->\n', '', 'PGMIO.OBJ', 'OBJVALTYPE=TAG||OBJVALTYPE=OBJ||OBJVALTYPE=LBL', 'C', '', '', 'N', '20141103200228', '20171227223427'),
 ('FORMVIEW', 78, 'HTML', 'STARTXT', 'TAG', 10, '-', '', '	<!--\n	#####################################################\n	## 폼뷰 {G.GRPNM} - START\n	#####################################################\n	-->\n    <div class=\"GRP_OBJECT\" style=\"width:{G.GRPWIDTH};\">\n        <div class=\"GRP_GAP\"><!--흰색 바깥 여백-->\n            <div class=\"GRP_INNER\" style=\"height:{G.GRPHEIGHT-16};\">\n				\n			<div sty_le=\"width:0px;height:0px;overflow: hidden\">\n				<form id=\"formview{G.GRPID}\" name=\"formview{G.GRPID}\" method=\"post\" enctype=\"multipart/form-data\"  onsubmit=\"return false;\">\n				<input type=\"hidden\" name=\"{G.GRPID}-CTLCUD\"  id=\"{G.GRPID}-CTLCUD\" value=\"\">\n			</div>	\n', '', '', '', 'R', 'G.VBOX=NONE', '', 'N', '20141103200639', '20190719035457'),
-('FORMVIEW', 79, 'HTML', 'LBLSTARTTXT', 'LBL', 20, '-', '', '		<div class=\"DETAIL_LABELGRP\">\n			<div class=\"DETAIL_LABEL\"  style=\"\">\n', '', '', '', 'R', '', '', 'N', '20141103200639', '20171228233201'),
+('FORMVIEW', 79, 'HTML', 'LBLSTARTTXT', 'LBL', 20, '-', '', '		<div class=\"FORMVIEW_LABELGRP\">\n			<div class=\"FORMVIEW_LABEL\"  style=\"\">\n', '', '', '', 'R', '', '', 'N', '20141103200639', '20190719043724'),
 ('FORMVIEW', 80, 'HTML', 'LBLTXT', 'LBL', 30, '-', '', '				* {G.GRPNM}\n', '', '', '', 'R', '', '', 'N', '20141103200639', '20171228233201'),
 ('FORMVIEW', 81, 'HTML', 'LBLENDTXT', 'LBL', 40, '-', '', '			</div>\n', '', '', '', 'R', '', '', 'N', '20141103200639', '20171228233201'),
-('FORMVIEW', 82, 'HTML', 'BTNSTARTTXT', 'BTN', 50, '-', '', '			<div class=\"DETAIL_LABELBTN\"  style=\"\">\n', '', '', '', 'R', '', '', 'N', '20141103200639', '20171228233201'),
+('FORMVIEW', 82, 'HTML', 'BTNSTARTTXT', 'BTN', 50, '-', '', '			<div class=\"FORMVIEW_LABELBTN\"  style=\"\">\n', '', '', '', 'R', '', '', 'N', '20141103200639', '20190719043732'),
 ('FORMVIEW', 83, 'HTML', 'BTNTXT', 'BTN', 60, '-', '', '				<input type=\"button\" name=\"BTN_{G.GRPID}_{F.FNCID}\" value=\"{F.FNCNM}\" onclick=\"{G.GRPID}_{F.FNCID}(uuidv4());\">', '', 'PGMFNC', 'FNCCD!=SEARCH', 'L', '', '', 'N', '20141103200639', '20180427072358'),
 ('FORMVIEW', 84, 'HTML', 'BTNENDTXT', 'BTN', 70, '-', '', '			</div>\n		</div>\n', '', '', '', 'R', '', '', 'N', '20141103200639', '20171205120921'),
-('FORMVIEW', 85, 'HTML', 'OBJSTARTTXT', 'OBJ', 80, '-', '', '		<div style=\"height:{G.GRPHEIGHT-38};\" class=\"DETAIL_OBJECT\">\n			<DIV class=\"CON_LINE\" is_br_tag>\n', '', '', '', 'R', '', '', 'N', '20141103200639', '20190719035457'),
+('FORMVIEW', 85, 'HTML', 'OBJSTARTTXT', 'OBJ', 80, '-', '', '		<div style=\"height:{G.GRPHEIGHT-38};\" class=\"FORMVIEW_OBJECT\">\n			<DIV class=\"CON_LINE\" is_br_tag>\n', '', '', '', 'R', '', '', 'N', '20141103200639', '20190719043742'),
 ('FORMVIEW', 86, 'HTML', 'OBJTXT', 'OBJ', 90, '-', '', '			<!--OBJECT LIST PRINT.-->\n', '', 'PGMIO.OBJ', 'OBJVALTYPE=TAG||OBJVALTYPE=OBJ||OBJVALTYPE=LBL', 'C', '', '', 'N', '20141103200639', '20171205120921'),
 ('FORMVIEW', 87, 'HTML', 'OBJENDTXT', 'OBJ', 100, '-', '', '			</DIV><!--is_br_tab end-->\n		</div>\n', '', '', '', 'R', '', '', 'N', '20141103200639', '20171228233648'),
 ('FORMVIEW', 88, 'HTML', 'ENDTXT', 'TAG', 110, '-', '', '		<div style=\"width:0px;height:0px;overflow: hidden\"></form></div>    \n		</div>\n		</div>\n	</div>\n	<!--\n	#####################################################\n	## 폼뷰 - END\n	#####################################################\n	-->\n', '', '', '', 'R', '', '', 'N', '20141103200639', '20190624225621'),
