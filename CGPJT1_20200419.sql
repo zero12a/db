@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 172.17.0.1:3306
--- 생성 시간: 20-04-19 02:38
+-- 생성 시간: 20-04-19 13:24
 -- 서버 버전: 5.7.20
 -- PHP 버전: 7.4.0
 
@@ -83,7 +83,7 @@ INSERT INTO `CG_DD` (`PJTSEQ`, `DDSEQ`, `COLID`, `COLNM`, `COLSNM`, `DATATYPE`, 
 (0, 13, 'kk', 'kk', '', '', 1212, '', '', '', '', 'LEFT', '', '', 'LEFT', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'NONE', 0, 'N', '20150101183335', 0, NULL, NULL),
 (0, 14, 'rr', 'rr', '', '', 121212, '', '', '', '', 'LEFT', '', '', 'LEFT', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'NONE', 0, 'N', '20150101184154', 0, NULL, NULL),
 (0, 15, 'ww', 'ww', 'w', '', 1212, '', '', '', '', 'LEFT', '', '', 'LEFT', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'NONE', 0, 'N', '20150101193004', 0, NULL, NULL),
-(3, 17, 'ADDDT', '생성일', NULL, 'STRING', 14, 'TEXTVIEW', '', '100', NULL, 'LEFT', '150', '', 'LEFT', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'NONE', NULL, 'N', '20160526131520', 0, '20200327065615', 1),
+(3, 17, 'ADDDT', '생성일', NULL, 'STRING', 14, 'INPUTBOX', '', '100', NULL, 'LEFT', '100', '', 'LEFT', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'NONE', NULL, 'N', '20160526131520', 0, '20200419212958', 1),
 (3, 18, 'ADD_DT', 'ADD', '', 'STRING', 14, 'TEXTVIEW', '', '40px', NULL, 'LEFT', '60', '', 'CENTER', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'NONE', 16, 'N', '20171205114111', 0, '20200321094758', 1),
 (3, 19, 'API_NM', 'NM', '', 'STRING', 50, 'TEXTVIEW', '', '40px', NULL, 'LEFT', '60', '', 'LEFT', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'NONE', 16, 'N', '20171203114724', 0, '20200321094757', 1),
 (3, 20, 'API_SEQ', 'SEQ', '', 'NUMBER', 10, 'TEXTVIEW', '', '40px', NULL, 'LEFT', '60', '', 'LEFT', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'NONE', 16, 'N', '20171203115437', 0, '20200321094757', 1),
@@ -462,18 +462,18 @@ INSERT INTO `CG_DD` (`PJTSEQ`, `DDSEQ`, `COLID`, `COLNM`, `COLSNM`, `DATATYPE`, 
 (3, 423, 'IMGNM', 'IMGNM', NULL, 'STRING', 100, 'INPUTBOX', '', '100', NULL, 'LEFT', '170', '', 'LEFT', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'NONE', NULL, 'N', '20200320070744', 1, '20200321220335', 1),
 (3, 424, 'IMGSVRNM', 'IMGSVRNM', NULL, 'STRING', 100, 'INPUTBOX', '', '100', NULL, 'LEFT', '170', '', 'LEFT', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'NONE', NULL, 'N', '20200320070744', 1, '20200321220335', 1),
 (3, 425, 'IMGSIZE', 'IMGSIZE', NULL, 'NUMBER', 100, 'INPUTBOX', '', '100', NULL, 'LEFT', '170', '', 'LEFT', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'NONE', NULL, 'N', '20200320070744', 1, '20200321220335', 1),
-(3, 426, 'ICONFILE', 'ICONFILE', NULL, 'STRING', 100, 'FILE', '', '100', NULL, 'LEFT', '300', '', 'LEFT', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'NONE', NULL, 'N', '20200320071039', 1, '20200321213925', 1),
+(3, 426, 'ICONFILE', 'ICONFILE', NULL, 'STRING', 100, 'FILE', '', '100', NULL, 'LEFT', '200', '', 'LEFT', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'NONE', NULL, 'N', '20200320071039', 1, '20200419214226', 1),
 (3, 427, 'IMGHASH', 'IMGHASH', NULL, 'STRING', 100, 'INPUTBOX', '', '100', NULL, 'LEFT', '180', '', 'LEFT', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'NONE', NULL, 'N', '20200321210853', 1, '20200321220335', 1),
 (3, 428, 'IMGTYPE', 'IMGTYPE', NULL, 'NUMBER', 2, 'COMBO', '', '100', NULL, 'LEFT', '180', '', 'LEFT', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'NONE', NULL, 'N', '20200321210853', 1, '20200419113545', 1),
-(3, 429, 'CODEMIRROR', 'CODEMIRROR', NULL, 'STRING', 300, 'CODEMIRROR', '', '100', NULL, 'LEFT', '200', '100', 'LEFT', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'NONE', NULL, 'N', '20200321221342', 1, '20200419113545', 1),
+(3, 429, 'CODEMIRROR', 'CODEMIRROR', NULL, 'STRING', 300, 'CODEMIRROR', '', '100', NULL, 'LEFT', '200', '100', 'LEFT', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'NONE', NULL, 'N', '20200321221342', 1, '20200419214226', 1),
 (3, 430, 'IMGTYPE2', 'IMGTYPE2', NULL, 'NUMBER', 2, 'INPUTRADIO', '', '100', NULL, 'LEFT', '400', '', 'LEFT', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'NONE', NULL, 'N', '20200322091140', 1, '20200419113545', 1),
-(3, 431, 'ADDDT2', '생성일2', NULL, 'STRING', 14, 'CALENDAR', '', '100', NULL, '', '60', '', 'LEFT', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'NONE', NULL, 'N', '20200322094124', 1, '20200322105248', 1),
+(3, 431, 'ADDDT2', '생성일2', NULL, 'STRING', 14, 'CALENDAR', '', '100', NULL, 'LEFT', '100', '', 'LEFT', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'NONE', NULL, 'N', '20200322094124', 1, '20200419212958', 1),
 (3, 432, 'IMGTYPE3', 'IMGTYPE3', NULL, 'NUMBER', 100, 'INPUTCHECK', '', '100', NULL, 'LEFT', '400', '', 'LEFT', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'NONE', NULL, 'N', '20200322105054', 1, '20200419113545', 1),
-(3, 433, 'TXTAREA', 'TXTAREA', NULL, 'STRING', 100, 'TEXTAREA', '', '100', NULL, 'LEFT', '80', '200', 'LEFT', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'NONE', NULL, 'N', '20200323061811', 1, '20200419113545', 1),
-(3, 434, 'TXTVIEW', 'TXTVIEW', NULL, 'STRING', 100, 'TEXTVIEW', '', '100', NULL, 'LEFT', '80', '200', 'LEFT', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'NONE', NULL, 'N', '20200323063422', 1, '20200323063727', 1),
-(3, 435, 'HTMLVIEW', 'HTMLVIEW', NULL, 'STRING', 100, 'WESUMMERNOTE', '', '100', NULL, 'LEFT', '200', '100', 'LEFT', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'NONE', NULL, 'N', '20200323063422', 1, '20200419113729', 1),
-(3, 436, 'SIGNPAD', 'SIGNPAD', NULL, 'STRING', 9000, 'SIGNPAD', '', '100', NULL, 'LEFT', '600', '200', 'LEFT', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'NONE', NULL, 'N', '20200402231708', 1, '20200419113545', 1),
-(3, 437, 'IMGTYPE4', 'IMGTYPE4', NULL, 'STRING', 200, 'DROPDOWN', '', '100', NULL, 'LEFT', '400', '', 'LEFT', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'NONE', NULL, 'N', '20200416214314', 1, '20200419113545', 1);
+(3, 433, 'TXTAREA', 'TXTAREA', NULL, 'STRING', 100, 'TEXTAREA', '', '100', NULL, 'LEFT', '80', '200', 'LEFT', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'NONE', NULL, 'N', '20200323061811', 1, '20200419214226', 1),
+(3, 434, 'TXTVIEW', 'TXTVIEW', NULL, 'STRING', 100, 'TEXTVIEW', '', '100', NULL, 'LEFT', '80', '200', 'LEFT', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'NONE', NULL, 'N', '20200323063422', 1, '20200419214226', 1),
+(3, 435, 'HTMLVIEW', 'HTMLVIEW', NULL, 'STRING', 100, 'WESUMMERNOTE', '', '100', NULL, 'LEFT', '200', '100', 'LEFT', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'NONE', NULL, 'N', '20200323063422', 1, '20200419214226', 1),
+(3, 436, 'SIGNPAD', 'SIGNPAD', NULL, 'STRING', 9000, 'SIGNPAD', '', '100', NULL, 'LEFT', '200', '200', 'LEFT', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'NONE', NULL, 'N', '20200402231708', 1, '20200419214226', 1),
+(3, 437, 'IMGTYPE4', 'IMGTYPE4', NULL, 'STRING', 200, 'DROPDOWN', '', '100', NULL, 'LEFT', '400', '', 'LEFT', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'NONE', NULL, 'N', '20200416214314', 1, '20200419213108', 1);
 
 -- --------------------------------------------------------
 
@@ -750,7 +750,7 @@ INSERT INTO `CG_DDOBJ` (`DDOBJSEQ`, `DDSEQ`, `GRPTYPE`, `OBJTYPE`, `ADDDT`, `ADD
 (905, 67, 'FORMVIEW', 'INPUTBOX', '20190829203944', 1, '20190909113412', 1),
 (906, 93, 'FORMVIEW', 'INPUTBOX', '20190829203944', 1, '20190829205255', 1),
 (907, 196, 'FORMVIEW', 'COMBO', '20190829203944', 1, '20191001063121', 1),
-(908, 17, 'FORMVIEW', 'TEXTVIEW', '20190829203944', 1, '20200327065615', 1),
+(908, 17, 'FORMVIEW', 'INPUTBOX', '20190829203944', 1, '20200419212959', 1),
 (909, 31, 'FORMVIEW', 'TEXTVIEW', '20190829203945', 1, '20200327065615', 1),
 (931, 323, 'CONDITION', 'INPUTBOX', '20190829211437', 1, '20190829211500', 1),
 (932, 37, 'CONDITION', 'INPUTBOX', '20190829211437', 1, '20200327064447', 1),
@@ -988,7 +988,7 @@ INSERT INTO `CG_DDOBJ` (`DDOBJSEQ`, `DDSEQ`, `GRPTYPE`, `OBJTYPE`, `ADDDT`, `ADD
 (1580, 423, 'GRID', 'INPUTBOXRO', '20200320070744', 1, '20200321213940', 1),
 (1581, 424, 'GRID', 'INPUTBOXRO', '20200320070744', 1, '20200321213940', 1),
 (1582, 425, 'GRID', 'INPUTBOXRO', '20200320070744', 1, '20200321213940', 1),
-(1589, 426, 'FORMVIEW', 'FILE', '20200320071039', 1, '20200321213925', 1),
+(1589, 426, 'FORMVIEW', 'FILE', '20200320071039', 1, '20200419214226', 1),
 (1590, 20, 'GRID', 'INPUTBOXRO', '20200321094728', 1, NULL, NULL),
 (1591, 19, 'GRID', 'INPUTBOXRO', '20200321094728', 1, NULL, NULL),
 (1600, 422, 'FORMVIEW', 'INPUTBOX', '20200321203616', 1, '20200321222832', 1),
@@ -999,20 +999,20 @@ INSERT INTO `CG_DDOBJ` (`DDOBJSEQ`, `DDSEQ`, `GRPTYPE`, `OBJTYPE`, `ADDDT`, `ADD
 (1614, 428, 'FORMVIEW', 'COMBO', '20200321210853', 1, '20200419113545', 1),
 (1615, 427, 'GRID', 'INPUTBOXRO', '20200321210939', 1, '20200321213940', 1),
 (1616, 428, 'GRID', 'COMBO', '20200321210939', 1, '20200329210518', 1),
-(1655, 429, 'FORMVIEW', 'CODEMIRROR', '20200321221342', 1, '20200419113545', 1),
+(1655, 429, 'FORMVIEW', 'CODEMIRROR', '20200321221342', 1, '20200419214226', 1),
 (1656, 429, 'GRID', 'INPUTBOXRO', '20200321221548', 1, '20200322105248', 1),
 (1659, 430, 'FORMVIEW', 'INPUTRADIO', '20200322091140', 1, '20200419113545', 1),
 (1660, 430, 'GRID', 'COMBO', '20200322091212', 1, '20200329210716', 1),
 (1671, 431, 'GRID', 'CALENDAR', '20200322094124', 1, '20200322105248', 1),
-(1673, 431, 'FORMVIEW', 'CALENDAR', '20200322094253', 1, '20200322094603', 1),
+(1673, 431, 'FORMVIEW', 'CALENDAR', '20200322094253', 1, '20200419212958', 1),
 (1679, 432, 'GRID', 'COMBOCHECK', '20200322105054', 1, '20200403173246', 1),
 (1680, 432, 'FORMVIEW', 'INPUTCHECK', '20200322105228', 1, '20200419113545', 1),
 (1692, 433, 'GRID', 'TEXTAREA', '20200323061811', 1, NULL, NULL),
-(1693, 433, 'FORMVIEW', 'TEXTAREA', '20200323061850', 1, '20200419113545', 1),
+(1693, 433, 'FORMVIEW', 'TEXTAREA', '20200323061850', 1, '20200419214226', 1),
 (1695, 434, 'GRID', 'TEXTAREA', '20200323063422', 1, '20200323063445', 1),
 (1696, 435, 'GRID', 'TEXTAREA', '20200323063422', 1, '20200323063445', 1),
-(1700, 434, 'FORMVIEW', 'TEXTVIEW', '20200323063625', 1, '20200323063727', 1),
-(1701, 435, 'FORMVIEW', 'WESUMMERNOTE', '20200323063625', 1, '20200419113729', 1),
+(1700, 434, 'FORMVIEW', 'TEXTVIEW', '20200323063625', 1, '20200419214226', 1),
+(1701, 435, 'FORMVIEW', 'WESUMMERNOTE', '20200323063625', 1, '20200419214226', 1),
 (1707, 185, 'CONDITION', 'INPUTBOX', '20200325063707', 1, '20200327064730', 1),
 (1708, 182, 'CONDITION', 'INPUTBOX', '20200325063707', 1, '20200327064642', 1),
 (1727, 313, 'FORMVIEW', 'INPUTBOX', '20200327065147', 1, '20200327065614', 1),
@@ -1024,10 +1024,10 @@ INSERT INTO `CG_DDOBJ` (`DDOBJSEQ`, `DDSEQ`, `GRPTYPE`, `OBJTYPE`, `ADDDT`, `ADD
 (1735, 189, 'FORMVIEW', 'INPUTBOX', '20200327065147', 1, '20200327065615', 1),
 (1736, 190, 'FORMVIEW', 'INPUTBOX', '20200327065147', 1, '20200327065615', 1),
 (1739, 192, 'FORMVIEW', 'INPUTBOX', '20200327065147', 1, '20200327065615', 1),
-(1740, 436, 'FORMVIEW', 'SIGNPAD', '20200402231708', 1, '20200419113545', 1),
+(1740, 436, 'FORMVIEW', 'SIGNPAD', '20200402231708', 1, '20200419214226', 1),
 (1748, 436, 'GRID', 'INPUTBOXRO', '20200404114338', 1, NULL, NULL),
 (1749, 437, 'GRID', 'DROPDOWN', '20200416214314', 1, NULL, NULL),
-(1751, 437, 'FORMVIEW', 'DROPDOWN', '20200416215318', 1, '20200419113545', 1);
+(1751, 437, 'FORMVIEW', 'DROPDOWN', '20200416215318', 1, '20200419213108', 1);
 
 -- --------------------------------------------------------
 
@@ -1080,36 +1080,6 @@ CREATE TABLE `CG_MONOLOG` (
   `CHANNEL` varchar(30) DEFAULT NULL,
   `ADDDT` varchar(14) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- 테이블의 덤프 데이터 `CG_MONOLOG`
---
-
-INSERT INTO `CG_MONOLOG` (`LOGSEQ`, `URL`, `SESSIONID`, `REQTOKEN`, `RESTOKEN`, `USERID`, `USERSEQ`, `LISTNM`, `LOGLEVEL`, `LOGDT`, `LOGMSG`, `CHANNEL`, `ADDDT`) VALUES
-(1, '/c.g/cg_pgminfo_crud3.php', 'qqee2s9bjktdqtcldejvd8a44a', '', '5e9bb968e3d5f', 'zero12a', 1, 'log_CG', 'INFO', '2', 'POP_PGMID=', 'PGMINFO', '20200419113729'),
-(2, '/c.g/cg_pgminfo_crud3.php', 'qqee2s9bjktdqtcldejvd8a44a', '', '5e9bb968e3d5f', 'zero12a', 1, 'log_CG', 'INFO', '2', 'POP_PGMNM=', 'PGMINFO', '20200419113729'),
-(3, '/c.g/cg_pgminfo_crud3.php', 'qqee2s9bjktdqtcldejvd8a44a', '', '5e9bb968e3d5f', 'zero12a', 1, 'log_CG', 'INFO', '2', 'POP_PJTSEQ=', 'PGMINFO', '20200419113729'),
-(4, '/c.g/cg_pgminfo_crud3.php', 'qqee2s9bjktdqtcldejvd8a44a', '', '5e9bb968e3d5f', 'zero12a', 1, 'log_CG', 'INFO', '2', 'to_coltype before : i', 'PGMINFO', '20200419113729'),
-(5, '/c.g/cg_pgminfo_crud3.php', 'qqee2s9bjktdqtcldejvd8a44a', '', '5e9bb968e3d5f', 'zero12a', 1, 'log_CG', 'INFO', '2', 'to_coltype after : i', 'PGMINFO', '20200419113729'),
-(6, '/c.g/cg_pgminfo_crud3.php', 'qqee2s9bjktdqtcldejvd8a44a', '', '5e9bb968e3d5f', 'zero12a', 1, 'log_CG', 'INFO', '2', 'prepare sql : select * from CG_PJTINFO where PJTSEQ = ?', 'PGMINFO', '20200419113729'),
-(7, '/c.g/cg_pgminfo_crud3.php', 'qqee2s9bjktdqtcldejvd8a44a', '', '5e9bb968e3d5f', 'zero12a', 1, 'log_CG', 'INFO', '2', 'full sql : select * from CG_PJTINFO where PJTSEQ = 3', 'PGMINFO', '20200419113729'),
-(8, '/c.g/cg_pgminfo_crud3.php', 'qqee2s9bjktdqtcldejvd8a44a', '', '5e9bb968e3d5f', 'zero12a', 1, 'log_CG', 'INFO', '2', 'ctl:IO_SAVE', 'PGMINFO', '20200419113729'),
-(9, '/c.g/cg_pgminfo_crud3.php', 'qqee2s9bjktdqtcldejvd8a44a', '', '5e9bb968e3d5f', 'zero12a', 1, 'log_CG', 'INFO', '2', 'to_coltype before : sississsssssssssssisssssssssssiiiii', 'PGMINFO', '20200419113729'),
-(10, '/c.g/cg_pgminfo_crud3.php', 'qqee2s9bjktdqtcldejvd8a44a', '', '5e9bb968e3d5f', 'zero12a', 1, 'log_CG', 'INFO', '2', 'to_coltype after : sississsssssssssssisssssssssssiiiii', 'PGMINFO', '20200419113729'),
-(11, '/c.g/cg_pgminfo_crud3.php', 'qqee2s9bjktdqtcldejvd8a44a', '', '5e9bb968e3d5f', 'zero12a', 1, 'log_CG', 'INFO', '2', 'prepare sql : \n		update CG_PGMIO set\n		COLID = ?, COLORD=?, COLNM=?, DATATYPE=?, DATASIZE=?\n		,OBJTYPE = ?, LBLHIDDENYN=?, LBLWIDTH=?, LBLALIGN=?, OBJWIDTH=?\n		, OBJHEIGHT=?, OBJALIGN=?, HIDDENYN=?, EDITYN=?, FNINIT=?\n		, KEYYN=?, SEQYN = ?, BRYN=?, VALIDSEQ = ?, POPUP = ?\n		, FORMAT = ?, FOOTERNM = ?, FOOTERMATH = ?\n		, ICONNM = ?, ICONSTYLE = ?, LBLSTYLE = ?, OBJSTYLE = ?, OBJ2STYLE = ?\n		, FNCHANGE = ?, PLACEHOLDER = ?\n		, MODDT = date_format(sysdate(),\'%Y%m%d%H%i%s\'), MODID = ?\n  		where PJTSEQ=? and PGMSEQ = ? and GRPSEQ = ? and IOSEQ = ?\n		', 'PGMINFO', '20200419113729'),
-(12, '/c.g/cg_pgminfo_crud3.php', 'qqee2s9bjktdqtcldejvd8a44a', '', '5e9bb968e3d5f', 'zero12a', 1, 'log_CG', 'INFO', '2', 'full sql : \n		update CG_PGMIO set\n		COLID = \'HTMLVIEW\', COLORD=77, COLNM=\'HTMLVIEW\', DATATYPE=\'STRING\', DATASIZE=100\n		,OBJTYPE = \'WESUMMERNOTE\', LBLHIDDENYN=\'N\', LBLWIDTH=\'100\', LBLALIGN=\'LEFT\', OBJWIDTH=\'200\'\n		, OBJHEIGHT=\'100\', OBJALIGN=\'LEFT\', HIDDENYN=\'N\', EDITYN=\'Y\', FNINIT=\'\'\n		, KEYYN=\'N\', SEQYN = \'N\', BRYN=\'Y\', VALIDSEQ = null, POPUP = \'\'\n		, FORMAT = \'\', FOOTERNM = \'\', FOOTERMATH = \'\'\n		, ICONNM = \'\', ICONSTYLE = \'\', LBLSTYLE = \'\', OBJSTYLE = \'\', OBJ2STYLE = \'\'\n		, FNCHANGE = \'\', PLACEHOLDER = \'\'\n		, MODDT = date_format(sysdate(),\'%Y%m%d%H%i%s\'), MODID = 1\n  		where PJTSEQ=3 and PGMSEQ = 106 and GRPSEQ = 278 and IOSEQ = 1590\n		', 'PGMINFO', '20200419113729'),
-(13, '/c.g/cg_pgminfo_crud3.php', 'qqee2s9bjktdqtcldejvd8a44a', '', '5e9bb968e3d5f', 'zero12a', 1, 'log_CG', 'INFO', '2', 'to_coltype before : is', 'PGMINFO', '20200419113729'),
-(14, '/c.g/cg_pgminfo_crud3.php', 'qqee2s9bjktdqtcldejvd8a44a', '', '5e9bb968e3d5f', 'zero12a', 1, 'log_CG', 'INFO', '2', 'to_coltype after : is', 'PGMINFO', '20200419113729'),
-(15, '/c.g/cg_pgminfo_crud3.php', 'qqee2s9bjktdqtcldejvd8a44a', '', '5e9bb968e3d5f', 'zero12a', 1, 'log_CG', 'INFO', '2', 'prepare sql : \n				select\n					DDSEQ, COLID, COLNM\n				from CG_DD\n				where PJTSEQ=? and COLID = ?\n				', 'PGMINFO', '20200419113729'),
-(16, '/c.g/cg_pgminfo_crud3.php', 'qqee2s9bjktdqtcldejvd8a44a', '', '5e9bb968e3d5f', 'zero12a', 1, 'log_CG', 'INFO', '2', 'full sql : \n				select\n					DDSEQ, COLID, COLNM\n				from CG_DD\n				where PJTSEQ=3 and COLID = \'HTMLVIEW\'\n				', 'PGMINFO', '20200419113729'),
-(17, '/c.g/cg_pgminfo_crud3.php', 'qqee2s9bjktdqtcldejvd8a44a', '', '5e9bb968e3d5f', 'zero12a', 1, 'log_CG', 'INFO', '2', 'to_coltype before : ssisssssssisiis', 'PGMINFO', '20200419113729'),
-(18, '/c.g/cg_pgminfo_crud3.php', 'qqee2s9bjktdqtcldejvd8a44a', '', '5e9bb968e3d5f', 'zero12a', 1, 'log_CG', 'INFO', '2', 'to_coltype after : ssisssssssisiis', 'PGMINFO', '20200419113729'),
-(19, '/c.g/cg_pgminfo_crud3.php', 'qqee2s9bjktdqtcldejvd8a44a', '', '5e9bb968e3d5f', 'zero12a', 1, 'log_CG', 'INFO', '2', 'prepare sql : \n					update CG_DD set\n						COLNM = ?, DATATYPE = ?, DATASIZE = ?, OBJTYPE = ?, LBLWIDTH = ?\n						,LBLHEIGHT = ?, LBLALIGN = ?,  OBJWIDTH = ?, OBJHEIGHT = ?, OBJALIGN = ?\n						, VALIDSEQ = ?, POPUP = ?\n						,MODDT = date_format(sysdate(),\'%Y%m%d%H%i%s\'), MODID = ?\n					where PJTSEQ = ? and COLID = ?\n					', 'PGMINFO', '20200419113729'),
-(20, '/c.g/cg_pgminfo_crud3.php', 'qqee2s9bjktdqtcldejvd8a44a', '', '5e9bb968e3d5f', 'zero12a', 1, 'log_CG', 'INFO', '2', 'full sql : \n					update CG_DD set\n						COLNM = \'HTMLVIEW\', DATATYPE = \'STRING\', DATASIZE = 100, OBJTYPE = \'WESUMMERNOTE\', LBLWIDTH = \'100\'\n						,LBLHEIGHT = \'\', LBLALIGN = \'LEFT\',  OBJWIDTH = \'200\', OBJHEIGHT = \'100\', OBJALIGN = \'LEFT\'\n						, VALIDSEQ = null, POPUP = \'\'\n						,MODDT = date_format(sysdate(),\'%Y%m%d%H%i%s\'), MODID = 1\n					where PJTSEQ = 3 and COLID = \'HTMLVIEW\'\n					', 'PGMINFO', '20200419113729'),
-(21, '/c.g/cg_pgminfo_crud3.php', 'qqee2s9bjktdqtcldejvd8a44a', '', '5e9bb968e3d5f', 'zero12a', 1, 'log_CG', 'INFO', '2', 'to_coltype before : issiissi', 'PGMINFO', '20200419113729'),
-(22, '/c.g/cg_pgminfo_crud3.php', 'qqee2s9bjktdqtcldejvd8a44a', '', '5e9bb968e3d5f', 'zero12a', 1, 'log_CG', 'INFO', '2', 'to_coltype after : issiissi', 'PGMINFO', '20200419113729'),
-(23, '/c.g/cg_pgminfo_crud3.php', 'qqee2s9bjktdqtcldejvd8a44a', '', '5e9bb968e3d5f', 'zero12a', 1, 'log_CG', 'INFO', '2', 'prepare sql : \n				insert into CG_DDOBJ (\n					DDSEQ,GRPTYPE,OBJTYPE\n					,ADDDT, ADDID\n				) values (\n					?,?,?\n					,date_format(sysdate(),\'%Y%m%d%H%i%s\'), ?\n				)\n				ON DUPLICATE KEY \n					UPDATE DDSEQ = ?, GRPTYPE = ?, OBJTYPE = ?\n					,MODDT = date_format(sysdate(),\'%Y%m%d%H%i%s\'), MODID = ?\n				', 'PGMINFO', '20200419113729'),
-(24, '/c.g/cg_pgminfo_crud3.php', 'qqee2s9bjktdqtcldejvd8a44a', '', '5e9bb968e3d5f', 'zero12a', 1, 'log_CG', 'INFO', '2', 'full sql : \n				insert into CG_DDOBJ (\n					DDSEQ,GRPTYPE,OBJTYPE\n					,ADDDT, ADDID\n				) values (\n					435,\'FORMVIEW\',\'WESUMMERNOTE\'\n					,date_format(sysdate(),\'%Y%m%d%H%i%s\'), 1\n				)\n				ON DUPLICATE KEY \n					UPDATE DDSEQ = 435, GRPTYPE = \'FORMVIEW\', OBJTYPE = \'WESUMMERNOTE\'\n					,MODDT = date_format(sysdate(),\'%Y%m%d%H%i%s\'), MODID = 1\n				', 'PGMINFO', '20200419113729');
 
 -- --------------------------------------------------------
 
@@ -2520,7 +2490,7 @@ INSERT INTO `CG_PGMINFO` (`PGMSEQ`, `PGMID`, `PJTSEQ`, `PGMNM`, `PKGGRP`, `VIEWU
 (103, 'DBDEPLOY', 3, '데이터 배포', '', 'dbdeployView.php', 'NORMAL', '', '', 'NORMAL', 'Y', '20200210075948', 1, '20200320061446', NULL),
 (104, 'AUTHDEPLOY', 3, '메뉴/권한 배포', '', 'authdeployView.php', 'NORMAL', '', '', 'POWER', 'Y', '20200228070832', 0, '20200317064534', 1),
 (105, 'PJTSUMMARY', 3, '프로젝트요약', '', 'pjtsummaryView.php', 'NORMAL', '', '', 'NORMAL', 'Y', '20200312064226', 1, '20200325110859', NULL),
-(106, 'ICONMNG', 3, '아이콘관리', '', 'iconmngView.php', 'NORMAL', '', '', 'NORMAL', 'Y', '20200320070340', 1, '20200419113618', NULL),
+(106, 'ICONMNG', 3, '아이콘관리', '', 'iconmngView.php', 'NORMAL', '', '', 'NORMAL', 'Y', '20200320070340', 1, '20200419221907', NULL),
 (107, 'CODEAPI', 3, '코드조회API', '', 'codeapiView.php', 'NORMAL', '', '', 'NORMAL', 'Y', '20200324065058', 1, '20200327065629', NULL);
 
 -- --------------------------------------------------------
@@ -3922,30 +3892,30 @@ INSERT INTO `CG_PGMIO` (`PJTSEQ`, `PGMSEQ`, `GRPSEQ`, `IOSEQ`, `COLORD`, `COLID`
 (3, 106, 277, 1564, 30, 'IMGSVRNM', 'IMGSVRNM', 'STRING', NULL, 100, 'INPUTBOXRO', '', 'N', 'N', 'N', '', '', '70', '', 'LEFT', 'N', 'Y', '', '', 'N', '', '', '', '', '', '', '', '', NULL, '20200320070743', 1, '20200321213940', 1),
 (3, 106, 277, 1565, 40, 'IMGSIZE', 'IMGSIZE', 'NUMBER', NULL, 100, 'INPUTBOXRO', '', 'N', 'N', 'N', '', '', '70', '', 'LEFT', 'N', 'Y', '', '', 'N', '', '', '', '', '', '', '', '', NULL, '20200320070743', 1, '20200321213940', 1),
 (3, 106, 277, 1566, 100, 'ADDDT', '생성일', 'STRING', NULL, 14, 'INPUTBOXRO', '', 'N', 'N', 'N', '100', 'LEFT', '60', '', 'LEFT', 'N', 'Y', '', '', 'N', '', '', '', '', '', '', '', '', NULL, '20200320070744', 1, '20200322105248', 1),
-(3, 106, 278, 1567, 100, 'ICONFILE', 'ICONFILE', 'STRING', NULL, 100, 'FILE', '', 'N', 'N', 'N', '100', 'LEFT', '300', '', 'LEFT', 'N', 'Y', '', '', 'Y', '', '', '', '', '', '', '', '', NULL, '20200320071039', 1, '20200321213925', 1),
+(3, 106, 278, 1567, 100, 'ICONFILE', 'ICONFILE', 'STRING', NULL, 100, 'FILE', '', 'N', 'N', 'N', '100', 'LEFT', '200', '', 'LEFT', 'N', 'Y', '', '', 'N', '', '', '', '', '', '', '', '', '', '20200320071039', 1, '20200419214226', 1),
 (3, 106, 278, 1568, 10, 'ICONSEQ', 'seq', 'NUMBER', 2, 20, 'INPUTBOX', '', 'N', 'N', 'N', '100', 'LEFT', '170', '', 'LEFT', 'N', 'N', '', '', 'N', '', '', '', '', '', '', '', '', NULL, '20200321203616', 1, '20200321222832', 1),
 (3, 106, 278, 1569, 20, 'IMGNM', 'IMGNM', 'STRING', NULL, 100, 'INPUTBOX', '', 'N', 'N', 'N', '100', 'LEFT', '170', '', 'LEFT', 'N', 'Y', '', '', 'Y', '', '', '', '', '', '', '', '', NULL, '20200321203616', 1, '20200321220335', 1),
 (3, 106, 278, 1570, 30, 'IMGSIZE', 'IMGSIZE', 'NUMBER', NULL, 100, 'INPUTBOX', '', 'N', 'N', 'N', '100', 'LEFT', '170', '', 'LEFT', 'N', 'Y', '', '', 'N', '', '', '', '', '', '', '', '', NULL, '20200321203616', 1, '20200323061923', 1),
 (3, 106, 278, 1571, 40, 'IMGSVRNM', 'IMGSVRNM', 'STRING', NULL, 100, 'INPUTBOX', '', 'N', 'N', 'N', '100', 'LEFT', '170', '', 'LEFT', 'N', 'Y', '', '', 'Y', '', '', '', '', '', '', '', '', NULL, '20200321203616', 1, '20200321220335', 1),
-(3, 106, 278, 1572, 999, 'ADDDT', '생성일', 'STRING', NULL, 14, 'INPUTBOX', '', 'N', 'N', 'N', '100', 'LEFT', '100', '', 'LEFT', 'N', 'Y', '', '', 'Y', '', '', '', '', '', '', '', '', NULL, '20200321203616', 1, '20200321213925', 1),
+(3, 106, 278, 1572, 999, 'ADDDT', '생성일', 'STRING', NULL, 14, 'INPUTBOX', '', 'N', 'N', 'N', '100', 'LEFT', '100', '', 'LEFT', 'N', 'Y', '', '', 'N', '', '', '', '', '', '', '', '', '', '20200321203616', 1, '20200419212958', 1),
 (3, 106, 278, 1573, 50, 'IMGHASH', 'IMGHASH', 'STRING', NULL, 100, 'INPUTBOX', '', 'N', 'N', 'N', '100', 'LEFT', '180', '', 'LEFT', 'N', 'Y', '', '', 'N', '', '', '', '', '', '', '', '', NULL, '20200321210853', 1, '20200323061923', 1),
 (3, 106, 278, 1574, 60, 'IMGTYPE', 'IMGTYPE', 'NUMBER', NULL, 2, 'COMBO', '', 'N', 'N', 'N', '100', 'LEFT', '180', '', 'LEFT', 'N', 'Y', 'apiCodeCombo(\"G3\",\"IMGTYPE\",{\"CTLGRP\":\"G2\",\"CTLFNC\":\"SEARCH\",\"G1-PCD\":\"IMAGETYPE\"},\"\");', '', 'Y', '', '', '', '', '', '', '', '', '', '20200321210853', 1, '20200419113545', 1),
 (3, 106, 277, 1575, 50, 'IMGHASH', 'IMGHASH', 'STRING', NULL, 100, 'INPUTBOXRO', '', 'N', 'N', '', '100', '', '80', '', 'LEFT', 'N', 'Y', '', '', 'N', '', '', '', '', '', '', '', '', NULL, '20200321210939', 1, '20200321213940', 1),
 (3, 106, 277, 1576, 60, 'IMGTYPE', 'IMGTYPE', 'NUMBER', NULL, 2, 'COMBO', '', 'N', 'N', '', '100', '', '80', '', 'LEFT', 'N', 'Y', 'apiCodeCombo(\"G2\",\"IMGTYPE\",{\"CTLGRP\":\"G2\",\"CTLFNC\":\"SEARCH\",\"G1-PCD\":\"IMAGETYPE\"},\"\");', '', 'N', '', '', '', '', '', '', '', '', '', '20200321210939', 1, '20200329210518', 1),
-(3, 106, 278, 1577, 70, 'CODEMIRROR', 'CODEMIRROR', 'STRING', NULL, 300, 'CODEMIRROR', '', 'N', 'N', 'N', '100', 'LEFT', '200', '100', 'LEFT', 'N', 'Y', '', '', 'Y', '', '', '', '', '', '', '', '', '', '20200321221342', 1, '20200419113545', 1),
+(3, 106, 278, 1577, 70, 'CODEMIRROR', 'CODEMIRROR', 'STRING', NULL, 300, 'CODEMIRROR', '', 'N', 'N', 'N', '100', 'LEFT', '200', '100', 'LEFT', 'N', 'Y', '', '', 'Y', '', '', '', '', '', '', '', '', '', '20200321221342', 1, '20200419214226', 1),
 (3, 106, 277, 1578, 70, 'CODEMIRROR', 'CODEMIRROR', 'STRING', NULL, 300, 'INPUTBOXRO', '', 'N', 'N', '', '100', '', '80', '', 'LEFT', 'N', 'Y', '', '', 'N', '', '', '', '', '', '', '', '', NULL, '20200321221548', 1, '20200322105248', 1),
 (3, 106, 278, 1579, 65, 'IMGTYPE2', 'IMGTYPE2', 'NUMBER', NULL, 2, 'INPUTRADIO', '', 'N', 'N', 'N', '100', 'LEFT', '400', '', 'LEFT', 'N', 'Y', 'apiCodeRadio(\"G3\",\"IMGTYPE2\",{\"CTLGRP\":\"G2\",\"CTLFNC\":\"SEARCH\",\"G1-PCD\":\"IMAGETYPE\"},\"\");', '', 'Y', '', '', '', '', '', '', '', '', '', '20200322091140', 1, '20200419113545', 1),
 (3, 106, 277, 1580, 65, 'IMGTYPE2', 'IMGTYPE2', 'NUMBER', NULL, 2, 'COMBO', '', 'N', 'N', '', '100', '', '80', '', 'LEFT', 'N', 'Y', 'apiCodeCombo(\"G2\",\"IMGTYPE2\",{\"CTLGRP\":\"G2\",\"CTLFNC\":\"SEARCH\", \"G1-PCD\":\"IMAGETYPE\"},\"\");', '', 'N', '', '', '', '', '', '', '', '', '', '20200322091212', 1, '20200329210716', 1),
 (3, 106, 277, 1581, 80, 'ADDDT2', '생성일2', 'STRING', NULL, 14, 'CALENDAR', '', 'N', 'N', '', '100', '', '60', '', 'LEFT', 'N', '', '', '', '', '', '', '', '', '', '', '', '', NULL, '20200322094109', 1, '20200322105248', 1),
-(3, 106, 278, 1582, 110, 'ADDDT2', '생성일2', 'STRING', NULL, 14, 'CALENDAR', '', 'N', 'N', 'N', '100', 'LEFT', '100', '', 'LEFT', 'N', 'N', '', '', 'Y', '', '', '', '', '', '', '', '', NULL, '20200322094253', 1, '20200322094603', 1),
+(3, 106, 278, 1582, 110, 'ADDDT2', '생성일2', 'STRING', NULL, 14, 'CALENDAR', '', 'N', 'N', 'N', '100', 'LEFT', '100', '', 'LEFT', 'N', 'N', '', '', 'N', '', '', '', '', '', '', '', '', '', '20200322094253', 1, '20200419212958', 1),
 (3, 106, 277, 1583, 67, 'IMGTYPE3', 'IMGTYPE3', 'STRING', NULL, 100, 'COMBOCHECK', '', 'N', 'N', '', '100', '', '80', '', 'LEFT', 'N', 'Y', '', '', 'N', '', '', '', '', '', '', '', '', '', '20200322105054', 1, '20200403173246', 1),
 (3, 106, 278, 1584, 67, 'IMGTYPE3', 'IMGTYPE3', 'NUMBER', NULL, 100, 'INPUTCHECK', '', 'N', 'N', 'N', '100', 'LEFT', '400', '', 'LEFT', 'N', 'Y', 'apiCodeCheck(\"G3\",\"IMGTYPE3\",{\"CTLGRP\":\"G2\",\"CTLFNC\":\"SEARCH\",\"G1-PCD\":\"IMAGETYPE\"},\"\");', '', 'Y', '', '', '', '', '', '', '', '', '', '20200322105228', 1, '20200419113545', 1),
 (3, 106, 277, 1585, 75, 'TXTAREA', 'TXTAREA', 'STRING', NULL, 100, 'TEXTAREA', '', 'N', 'N', '', '', '', '80', '', 'LEFT', 'N', 'Y', '', '', 'N', '', '', '', '', '', '', '', '', NULL, '20200323061811', 1, NULL, NULL),
-(3, 106, 278, 1586, 75, 'TXTAREA', 'TXTAREA', 'STRING', NULL, 100, 'TEXTAREA', '', 'N', 'N', 'N', '100', 'LEFT', '80', '200', 'LEFT', 'N', 'Y', '', '', 'N', '', '', '', '', '', '', '', '', '', '20200323061850', 1, '20200419113545', 1),
+(3, 106, 278, 1586, 75, 'TXTAREA', 'TXTAREA', 'STRING', NULL, 100, 'TEXTAREA', '', 'N', 'N', 'N', '100', 'LEFT', '80', '200', 'LEFT', 'N', 'Y', '', '', 'N', '', '', '', '', '', '', '', '', '', '20200323061850', 1, '20200419214226', 1),
 (3, 106, 277, 1587, 76, 'TXTVIEW', 'TXTVIEW', 'STRING', NULL, 100, 'TEXTAREA', '', 'N', 'N', '', '100', '', '80', '200', 'LEFT', 'N', 'Y', '', '', 'N', '', '', '', '', '', '', '', '', NULL, '20200323063422', 1, '20200323063445', 1),
 (3, 106, 277, 1588, 77, 'HTMLVIEW', 'HTMLVIEW', 'STRING', NULL, 100, 'TEXTAREA', '', 'N', 'N', '', '100', '', '80', '200', 'LEFT', 'N', 'Y', '', '', 'N', '', '', '', '', '', '', '', '', NULL, '20200323063422', 1, '20200323063445', 1),
-(3, 106, 278, 1589, 76, 'TXTVIEW', 'TXTVIEW', 'STRING', NULL, 100, 'TEXTVIEW', '', 'N', 'N', 'N', '100', 'LEFT', '80', '200', 'LEFT', 'N', 'N', '', '', 'N', '', '', '', '', '', '', '', '', NULL, '20200323063625', 1, '20200323063727', 1),
-(3, 106, 278, 1590, 77, 'HTMLVIEW', 'HTMLVIEW', 'STRING', NULL, 100, 'WESUMMERNOTE', '', 'N', 'N', 'N', '100', 'LEFT', '200', '100', 'LEFT', 'N', 'Y', '', '', 'Y', '', '', '', '', '', '', '', '', '', '20200323063625', 1, '20200419113728', 1),
+(3, 106, 278, 1589, 76, 'TXTVIEW', 'TXTVIEW', 'STRING', NULL, 100, 'TEXTVIEW', '', 'N', 'N', 'N', '100', 'LEFT', '80', '200', 'LEFT', 'N', 'N', '', '', 'N', '', '', '', '', '', '', '', '', '', '20200323063625', 1, '20200419214226', 1),
+(3, 106, 278, 1590, 77, 'HTMLVIEW', 'HTMLVIEW', 'STRING', NULL, 100, 'WESUMMERNOTE', '', 'N', 'N', 'N', '100', 'LEFT', '200', '100', 'LEFT', 'N', 'Y', '', '', 'N', '', '', '', '', '', '', '', '', '', '20200323063625', 1, '20200419214226', 1),
 (3, 107, 280, 1591, 10, 'CD', 'CD', 'STRING', 16, 30, 'INPUTBOX', '', 'Y', 'Y', 'N', '', 'LEFT', '40', '', 'LEFT', 'N', 'Y', '', '', 'N', '', '', '', '', '', '', '', '', NULL, '20200325061340', 1, '20200325064417', 1),
 (3, 107, 280, 1592, 20, 'NM', 'NM', 'STRING', 15, 100, 'INPUTBOX', '', 'N', 'N', 'N', '', 'LEFT', '60', '', 'LEFT', 'N', 'Y', '', '', 'N', '', '', '', '', '', '', '', '', NULL, '20200325061340', 1, NULL, NULL),
 (3, 107, 279, 1593, 10, 'PCD', 'PCD', 'STRING', 16, 30, 'INPUTBOX', '', 'N', 'N', 'N', '100', 'LEFT', '100', '22', 'LEFT', 'N', 'Y', '', '', 'Y', '', '', '', '', '', '', '', '', 'CDD, sCodeD', '20200325063706', 1, '20200327064730', 1),
@@ -3969,10 +3939,10 @@ INSERT INTO `CG_PGMIO` (`PJTSEQ`, `PGMSEQ`, `GRPSEQ`, `IOSEQ`, `COLORD`, `COLID`
 (3, 107, 281, 1611, 150, 'DELYN', '삭제YN', 'STRING', 15, 1, 'INPUTBOX', '', 'N', 'N', 'N', '100', 'LEFT', '150', '', 'LEFT', 'N', 'Y', '', '', 'Y', '', '', '', '', '', '', '', '', '', '20200327065147', 1, '20200327065614', 1),
 (3, 107, 281, 1612, 160, 'ADDDT', '생성일', 'STRING', NULL, 14, 'TEXTVIEW', '', 'N', 'N', 'N', '100', 'LEFT', '150', '', 'LEFT', 'N', 'Y', '', '', 'Y', '', '', '', '', '', '', '', '', '', '20200327065147', 1, '20200327065614', 1),
 (3, 107, 281, 1613, 170, 'MODDT', 'MODDT', 'STRING', 2, 14, 'TEXTVIEW', '', 'N', 'N', 'N', '100', 'LEFT', '150', '22', 'LEFT', 'N', 'Y', '', '', 'N', '', '', '', '', '', '', '', '', '', '20200327065147', 1, '20200327065614', 1),
-(3, 106, 278, 1614, 80, 'SIGNPAD', 'SIGNPAD', 'STRING', NULL, 9000, 'SIGNPAD', '', 'N', 'N', 'Y', '100', 'LEFT', '600', '200', 'LEFT', 'N', 'Y', '', '', 'N', '', '', '', '', '', '', '', '', '', '20200402231708', 1, '20200419113545', 1),
+(3, 106, 278, 1614, 80, 'SIGNPAD', 'SIGNPAD', 'STRING', NULL, 9000, 'SIGNPAD', '', 'N', 'N', 'N', '100', 'LEFT', '200', '200', 'LEFT', 'N', 'Y', '', '', 'N', '', '', '', '', '', '', '', '', '', '20200402231708', 1, '20200419214226', 1),
 (3, 106, 277, 1615, 78, 'SIGNPAD', 'SIGNPAD', 'STRING', NULL, 9000, 'INPUTBOXRO', '', 'N', 'N', '', '100', '', '600', '200', 'LEFT', 'N', 'Y', '', '', 'N', '', '', '', '', '', '', '', '', '', '20200404114338', 1, NULL, NULL),
 (3, 106, 277, 1616, 68, 'IMGTYPE4', 'IMGTYPE4', 'STRING', NULL, 200, 'DROPDOWN', '', 'N', 'N', '', '', '', '100', '', 'RIGHT', 'N', 'Y', 'apiCodeDropDown(\"G2\",\"IMGTYPE4\",{\"CTLGRP\":\"G2\", \"CTLFNC\":\"SEARCH\", \"G1-PCD\":\"CTGRID\"},\"\");', '', 'N', '', '', '', '', '', '', '', '', '', '20200416214314', 1, NULL, NULL),
-(3, 106, 278, 1617, 68, 'IMGTYPE4', 'IMGTYPE4', 'STRING', NULL, 200, 'DROPDOWN', '', 'N', 'N', 'N', '100', 'LEFT', '400', '', 'LEFT', 'N', 'Y', 'apiCodeDropDown(\"G3\",\"IMGTYPE4\",{\"CTLGRP\":\"G2\", \"CTLFNC\":\"SEARCH\", \"G1-PCD\":\"CTGRID\"},\"\");', '', 'Y', '', '', '', '', '', '', '', '', '', '20200416215318', 1, '20200419113545', 1);
+(3, 106, 278, 1617, 105, 'IMGTYPE4', 'IMGTYPE4', 'STRING', NULL, 200, 'DROPDOWN', '', 'N', 'N', 'N', '100', 'LEFT', '400', '', 'LEFT', 'N', 'Y', 'apiCodeDropDown(\"G3\",\"IMGTYPE4\",{\"CTLGRP\":\"G2\", \"CTLFNC\":\"SEARCH\", \"G1-PCD\":\"CTGRID\"},\"\");', '', 'Y', '', '', '', '', '', '', '', '', '', '20200416215318', 1, '20200419213108', 1);
 
 -- --------------------------------------------------------
 
@@ -4316,7 +4286,7 @@ INSERT INTO `CG_PGMSQL` (`SQLSEQ`, `PJTSEQ`, `PGMSEQ`, `SQLID`, `SQLNM`, `SVRSEQ
 (420, 3, 48, 'selMenuFoldSumG', '메뉴폴더별건수', 9, 'R', 'RTN_SELECT_LIST', 1, 'select \n	FOLDER_SEQ, count(MNU_SEQ) AS CNT\nfrom CMN_MNU\ngroup by  FOLDER_SEQ', 0, '20200317215257', '20200317215930'),
 (421, 3, 48, 'selCntToMnuG', '건수의 폴더', 9, 'R', 'RTN_SELECT_LIST', 1, 'select \n	0 as CHK, MNU_SEQ, PGMID, MNU_NM, URL\n	, PGMTYPE, MNU_ORD, FOLDER_SEQ, USE_YN\n	, ADD_DT, ADD_ID, MOD_ID, MOD_DT\nfrom CMN_MNU\nwhere FOLDER_SEQ = #{G4-FOLDER_SEQ}', 0, '20200317221158', NULL),
 (422, 3, 48, 'chgFolderG', '폴더 이동', 9, 'U', 'RTN_INT', 1, 'update CMN_MNU set\n	FOLDER_SEQ = #{G5-FOLDER_SEQ}\n	,MOD_DT =  date_format(sysdate(),\'%Y%m%d%H%i%s\')\n	,MOD_ID = #{USER.SEQ}\nwhere MNU_SEQ = #{MNU_SEQ}\n\n', 0, '20200317221531', '20200318061759'),
-(423, 3, 106, 'selG', 'selG', 7, 'R', 'RTN_SELECT_LIST', 1, 'select ICONSEQ ,IMGNM ,IMGSVRNM ,IMGSIZE , ifnull(IMGHASH,\'\') as IMGHASH, ifnull(IMGTYPE,\'\') as IMGTYPE\n, ifnull(IMGTYPE,\'\') as IMGTYPE2\n, \'1,2,3,5\' as IMGTYPE3\n, \'INPUTBOX,TEXTAREA\' as IMGTYPE4\n, \'pppppp\' as CODEMIRROR\n, \'pppppp\' as TXTAREA\n, \'ㄴㅇㄹㄴㅇㄹ\' as TXTVIEW\n, \'<font color=blue>11</font>\' as HTMLVIEW\n, \'/up/SGN_200403174352wnL0.png\' as SIGNPAD\n, concat(substr(ADDDT,1,4),\'-\',substr(ADDDT,5,2),\'-\',substr(ADDDT,7,2)) as ADDDT2\n, ADDDT\nfrom CG_ICONMNG', 0, '20200320070630', '20200416214206'),
+(423, 3, 106, 'selG', 'selG', 7, 'R', 'RTN_SELECT_LIST', 1, 'select ICONSEQ ,IMGNM ,IMGSVRNM ,IMGSIZE , ifnull(IMGHASH,\'\') as IMGHASH, ifnull(IMGTYPE,\'\') as IMGTYPE\n, ifnull(IMGTYPE,\'\') as IMGTYPE2\n, \'1,2,3,5\' as IMGTYPE3\n, \'INPUTBOX,TEXTAREA\' as IMGTYPE4\n, \'pppppp\' as CODEMIRROR\n, \'pppppp\' as TXTAREA\n, \'ㄴㅇㄹㄴㅇㄹ\' as TXTVIEW\n, \'<font color=blue>11</font>\' as HTMLVIEW\n, \'/up/SGN_200403174352wnL0.png\' as SIGNPAD\n, concat(substr(ADDDT,1,4),\'-\',substr(ADDDT,5,2),\'-\',substr(ADDDT,7,2)) as ADDDT2\n, ADDDT\nfrom CG_ICONMNG', 0, '20200320070630', '20200419220509'),
 (424, 3, 106, 'insF', 'insF', 7, 'C', 'RTN_INT', 1, 'insert into CG_ICONMNG (\n	IMGNM ,IMGSVRNM ,IMGSIZE , IMGHASH, IMGTYPE, ADDDT\n)values (\n	#{G3-ICONFILE_NM}, #{G3-ICONFILE_SVRNM}, #{G3-ICONFILE_SIZE}, #{G3-ICONFILE_HASH}, #{G3-ICONFILE_IMGTYPE}\n	, date_format(sysdate(),\'%Y%m%d%H%i%s\')\n)\n', 0, '20200320070858', '20200321212651'),
 (425, 3, 107, 'sCodeD', 'sCodeD', 8, 'R', 'RTN_SELECT_LIST', 80, 'select CD,NM \nfrom CG_CODED \nwhere  PCD = #{G1-PCD} and DELYN = \'N\' and USEYN=\'Y\' \norder by   ORD asc', 0, '20200324065415', '20200326055626'),
 (426, 3, 107, 'VALIDSEQ', 'VALIDSEQ', 7, 'R', 'RTN_SELECT_LIST', 70, 'select VALIDSEQ as CD, concat(SUBSTRING(DATATYPE,1,1),\' \', VALIDNM) as NM \nfrom CG_VALID \nwhere PJTSEQ = #{G1-PJTSEQ} \norder by DATATYPE, VALIDORD asc\n', 0, '20200324065650', '20200327063814'),
@@ -6840,22 +6810,22 @@ INSERT INTO `CG_PGMSQLD` (`SQLSEQ`, `COLSEQ`, `PJTSEQ`, `PGMSEQ`, `SQLGBN`, `COL
 (433, 12307, 3, 107, 'O', 'MODDT', 'MODDT', 'N', 170, '20200327064616', NULL),
 (433, 12308, 3, 107, 'I', 'G1-PCD', 'PCD', 'N', 10, '20200327064616', NULL),
 (433, 12309, 3, 107, 'I', 'G1-CD', 'CD', 'N', 20, '20200327064616', NULL),
-(423, 12340, 3, 106, 'O', 'ICONSEQ', 'ICONSEQ', 'N', 10, '20200320070630', '20200416214206'),
-(423, 12341, 3, 106, 'O', 'IMGNM', 'IMGNM', 'N', 20, '20200320070630', '20200416214207'),
-(423, 12342, 3, 106, 'O', 'IMGSVRNM', 'IMGSVRNM', 'N', 30, '20200320070630', '20200416214207'),
-(423, 12343, 3, 106, 'O', 'IMGSIZE', 'IMGSIZE', 'N', 40, '20200320070630', '20200416214207'),
-(423, 12344, 3, 106, 'O', 'IMGHASH', 'IMGHASH', 'N', 50, '20200321210740', '20200416214207'),
-(423, 12345, 3, 106, 'O', 'IMGTYPE', 'IMGTYPE', 'N', 60, '20200321210740', '20200416214207'),
-(423, 12346, 3, 106, 'O', 'IMGTYPE2', 'IMGTYPE2', 'N', 70, '20200322091229', '20200416214207'),
-(423, 12347, 3, 106, 'O', 'IMGTYPE3', 'IMGTYPE3', 'N', 80, '20200322105126', '20200416214207'),
-(423, 12348, 3, 106, 'O', 'IMGTYPE4', 'IMGTYPE4', 'N', 90, '20200416214207', NULL),
-(423, 12349, 3, 106, 'O', 'CODEMIRROR', 'CODEMIRROR', 'N', 100, '20200416214207', NULL),
-(423, 12350, 3, 106, 'O', 'TXTAREA', 'TXTAREA', 'N', 110, '20200416214207', NULL),
-(423, 12351, 3, 106, 'O', 'TXTVIEW', 'TXTVIEW', 'N', 120, '20200416214207', NULL),
-(423, 12352, 3, 106, 'O', 'HTMLVIEW', 'HTMLVIEW', 'N', 130, '20200416214207', NULL),
-(423, 12353, 3, 106, 'O', 'SIGNPAD', 'SIGNPAD', 'N', 140, '20200416214207', NULL),
-(423, 12354, 3, 106, 'O', 'ADDDT2', 'ADDDT2', 'N', 150, '20200416214207', NULL),
-(423, 12355, 3, 106, 'O', 'ADDDT', 'ADDDT', 'N', 160, '20200416214207', NULL);
+(423, 12372, 3, 106, 'O', 'ICONSEQ', 'ICONSEQ', 'N', 10, '20200320070630', '20200419220510'),
+(423, 12373, 3, 106, 'O', 'IMGNM', 'IMGNM', 'N', 20, '20200320070630', '20200419220510'),
+(423, 12374, 3, 106, 'O', 'IMGSVRNM', 'IMGSVRNM', 'N', 30, '20200320070630', '20200419220510'),
+(423, 12375, 3, 106, 'O', 'IMGSIZE', 'IMGSIZE', 'N', 40, '20200320070630', '20200419220510'),
+(423, 12376, 3, 106, 'O', 'IMGHASH', 'IMGHASH', 'N', 50, '20200321210740', '20200419220510'),
+(423, 12377, 3, 106, 'O', 'IMGTYPE', 'IMGTYPE', 'N', 60, '20200321210740', '20200419220510'),
+(423, 12378, 3, 106, 'O', 'IMGTYPE2', 'IMGTYPE2', 'N', 70, '20200322091229', '20200419220510'),
+(423, 12379, 3, 106, 'O', 'IMGTYPE3', 'IMGTYPE3', 'N', 80, '20200322105126', '20200419220510'),
+(423, 12380, 3, 106, 'O', 'IMGTYPE4', 'IMGTYPE4', 'N', 90, '20200419220510', NULL),
+(423, 12381, 3, 106, 'O', 'CODEMIRROR', 'CODEMIRROR', 'N', 100, '20200419220510', NULL),
+(423, 12382, 3, 106, 'O', 'TXTAREA', 'TXTAREA', 'N', 110, '20200419220510', NULL),
+(423, 12383, 3, 106, 'O', 'TXTVIEW', 'TXTVIEW', 'N', 120, '20200419220510', NULL),
+(423, 12384, 3, 106, 'O', 'HTMLVIEW', 'HTMLVIEW', 'N', 130, '20200419220510', NULL),
+(423, 12385, 3, 106, 'O', 'SIGNPAD', 'SIGNPAD', 'N', 140, '20200419220510', NULL),
+(423, 12386, 3, 106, 'O', 'ADDDT2', 'ADDDT2', 'N', 150, '20200416214207', '20200419220510'),
+(423, 12387, 3, 106, 'O', 'ADDDT', 'ADDDT', 'N', 160, '20200416214207', '20200419220510');
 
 -- --------------------------------------------------------
 
@@ -11325,7 +11295,67 @@ INSERT INTO `CG_PGMVER` (`PJTSEQ`, `PGMSEQ`, `VERSEQ`, `VERDT`, `DEGREE`, `ACTIV
 (3, 106, 3781, '20200419', 23, 'N', '20200419113550', '20200419113554'),
 (3, 106, 3782, '20200419', 24, 'N', '20200419113554', '20200419113607'),
 (3, 106, 3783, '20200419', 25, 'N', '20200419113607', '20200419113619'),
-(3, 106, 3784, '20200419', 26, 'Y', '20200419113619', NULL);
+(3, 106, 3784, '20200419', 26, 'N', '20200419113619', '20200419213000'),
+(3, 106, 3785, '20200419', 27, 'N', '20200419213000', '20200419213006'),
+(3, 106, 3786, '20200419', 28, 'N', '20200419213006', '20200419213013'),
+(3, 106, 3787, '20200419', 29, 'N', '20200419213014', '20200419213015'),
+(3, 106, 3788, '20200419', 30, 'N', '20200419213015', '20200419213016'),
+(3, 106, 3789, '20200419', 31, 'N', '20200419213016', '20200419213134'),
+(3, 106, 3790, '20200419', 32, 'N', '20200419213134', '20200419213139'),
+(3, 106, 3791, '20200419', 33, 'N', '20200419213139', '20200419213140'),
+(3, 106, 3792, '20200419', 34, 'N', '20200419213140', '20200419213141'),
+(3, 106, 3793, '20200419', 35, 'N', '20200419213141', '20200419213144'),
+(3, 106, 3794, '20200419', 36, 'N', '20200419213144', '20200419214228'),
+(3, 106, 3795, '20200419', 37, 'N', '20200419214228', '20200419214229'),
+(3, 106, 3796, '20200419', 38, 'N', '20200419214229', '20200419214234'),
+(3, 106, 3797, '20200419', 39, 'N', '20200419214234', '20200419214242'),
+(3, 106, 3798, '20200419', 40, 'N', '20200419214242', '20200419214245'),
+(3, 106, 3799, '20200419', 41, 'N', '20200419214245', '20200419214704'),
+(3, 106, 3800, '20200419', 42, 'N', '20200419214704', '20200419214707'),
+(3, 106, 3801, '20200419', 43, 'N', '20200419214707', '20200419214713'),
+(3, 106, 3802, '20200419', 44, 'N', '20200419214713', '20200419214720'),
+(3, 106, 3803, '20200419', 45, 'N', '20200419214720', '20200419214722'),
+(3, 106, 3804, '20200419', 46, 'N', '20200419214722', '20200419215527'),
+(3, 106, 3805, '20200419', 47, 'N', '20200419215527', '20200419215531'),
+(3, 106, 3806, '20200419', 48, 'N', '20200419215531', '20200419215533'),
+(3, 106, 3807, '20200419', 49, 'N', '20200419215533', '20200419215540'),
+(3, 106, 3808, '20200419', 50, 'N', '20200419215540', '20200419215545'),
+(3, 106, 3809, '20200419', 51, 'N', '20200419215545', '20200419220037'),
+(3, 106, 3810, '20200419', 52, 'N', '20200419220037', '20200419220043'),
+(3, 106, 3811, '20200419', 53, 'N', '20200419220043', '20200419220051'),
+(3, 106, 3812, '20200419', 54, 'N', '20200419220051', '20200419220054'),
+(3, 106, 3813, '20200419', 55, 'N', '20200419220054', '20200419220059'),
+(3, 106, 3814, '20200419', 56, 'N', '20200419220059', '20200419220207'),
+(3, 106, 3815, '20200419', 57, 'N', '20200419220207', '20200419220208'),
+(3, 106, 3816, '20200419', 58, 'N', '20200419220208', '20200419220214'),
+(3, 106, 3817, '20200419', 59, 'N', '20200419220214', '20200419220216'),
+(3, 106, 3818, '20200419', 60, 'N', '20200419220216', '20200419220224'),
+(3, 106, 3819, '20200419', 61, 'N', '20200419220224', '20200419220402'),
+(3, 106, 3820, '20200419', 62, 'N', '20200419220402', '20200419220403'),
+(3, 106, 3821, '20200419', 63, 'N', '20200419220403', '20200419220409'),
+(3, 106, 3822, '20200419', 64, 'N', '20200419220409', '20200419220417'),
+(3, 106, 3823, '20200419', 65, 'N', '20200419220417', '20200419220420'),
+(3, 106, 3824, '20200419', 66, 'N', '20200419220420', '20200419220512'),
+(3, 106, 3825, '20200419', 67, 'N', '20200419220512', '20200419220518'),
+(3, 106, 3826, '20200419', 68, 'N', '20200419220518', '20200419220526'),
+(3, 106, 3827, '20200419', 69, 'N', '20200419220526', '20200419220529'),
+(3, 106, 3828, '20200419', 70, 'N', '20200419220529', '20200419220530'),
+(3, 106, 3829, '20200419', 71, 'N', '20200419220530', '20200419220713'),
+(3, 106, 3830, '20200419', 72, 'N', '20200419220713', '20200419220719'),
+(3, 106, 3831, '20200419', 73, 'N', '20200419220719', '20200419220727'),
+(3, 106, 3832, '20200419', 74, 'N', '20200419220727', '20200419220730'),
+(3, 106, 3833, '20200419', 75, 'N', '20200419220730', '20200419220731'),
+(3, 106, 3834, '20200419', 76, 'N', '20200419220731', '20200419220833'),
+(3, 106, 3835, '20200419', 77, 'N', '20200419220833', '20200419220841'),
+(3, 106, 3836, '20200419', 78, 'N', '20200419220841', '20200419220845'),
+(3, 106, 3837, '20200419', 79, 'N', '20200419220845', '20200419220846'),
+(3, 106, 3838, '20200419', 80, 'N', '20200419220846', '20200419220849'),
+(3, 106, 3839, '20200419', 81, 'N', '20200419220849', '20200419221901'),
+(3, 106, 3840, '20200419', 82, 'N', '20200419221902', '20200419221908'),
+(3, 106, 3841, '20200419', 83, 'N', '20200419221908', '20200419221910'),
+(3, 106, 3842, '20200419', 84, 'N', '20200419221910', '20200419221913'),
+(3, 106, 3843, '20200419', 85, 'N', '20200419221913', '20200419221921'),
+(3, 106, 3844, '20200419', 86, 'Y', '20200419221921', NULL);
 
 -- --------------------------------------------------------
 
@@ -15301,11 +15331,71 @@ INSERT INTO `CG_RSTFILE` (`PJTSEQ`, `PGMSEQ`, `VERSEQ`, `FILESEQ`, `FILETYPE`, `
 (3, 106, 3777, 3718, 'HTMLJS', 'iconmng.js', 'N', '61fb6dce7c83ea68e956fa29476b89df', 49685, 'ASYNC', 7.68, 0.89, '20200419113123', '20200419113606'),
 (3, 106, 3778, 3719, 'SVRDAO', 'iconmngDao.php', 'N', '146620d78d4b3dea50ded77f8effc9dc', 1770, 'ASYNC', 1.30, 0.11, '20200419113125', '20200419113549'),
 (3, 106, 3779, 3720, 'HTML', 'iconmngView.php', 'N', 'a2ed0615d66ee07b1e4e02545ea24878', 20940, 'ASYNC', 5.80, 0.75, '20200419113133', '20200419113618'),
-(3, 106, 3780, 3721, 'SVRDAO', 'iconmngDao.php', 'Y', '146620d78d4b3dea50ded77f8effc9dc', 1770, 'ASYNC', 0.82, 0.05, '20200419113550', NULL),
-(3, 106, 3781, 3722, 'SVRCTL', 'iconmngController.php', 'Y', '3b6c2aa9d3c5e3fcc15261df294b70df', 10297, 'ASYNC', 4.01, 0.24, '20200419113554', NULL),
-(3, 106, 3782, 3723, 'HTMLJS', 'iconmng.js', 'Y', '8602b2d5afd7659c4cb6ba4ffbd70849', 49325, 'ASYNC', 9.93, 1.88, '20200419113606', NULL),
-(3, 106, 3783, 3724, 'HTML', 'iconmngView.php', 'Y', 'a2ed0615d66ee07b1e4e02545ea24878', 20940, 'ASYNC', 10.54, 0.40, '20200419113618', NULL),
-(3, 106, 3784, 3725, 'SVRSVC', 'iconmngService.php', 'Y', '7489d4c938769036eb2046e75cf7e516', 9023, 'ASYNC', 1.44, 0.10, '20200419113620', NULL);
+(3, 106, 3780, 3721, 'SVRDAO', 'iconmngDao.php', 'N', '146620d78d4b3dea50ded77f8effc9dc', 1770, 'ASYNC', 0.82, 0.05, '20200419113550', '20200419213016'),
+(3, 106, 3781, 3722, 'SVRCTL', 'iconmngController.php', 'N', '3b6c2aa9d3c5e3fcc15261df294b70df', 10297, 'ASYNC', 4.01, 0.24, '20200419113554', '20200419213019'),
+(3, 106, 3782, 3723, 'HTMLJS', 'iconmng.js', 'N', '8602b2d5afd7659c4cb6ba4ffbd70849', 49325, 'ASYNC', 9.93, 1.88, '20200419113606', '20200419213013'),
+(3, 106, 3783, 3724, 'HTML', 'iconmngView.php', 'N', 'a2ed0615d66ee07b1e4e02545ea24878', 20940, 'ASYNC', 10.54, 0.40, '20200419113618', '20200419213006'),
+(3, 106, 3784, 3725, 'SVRSVC', 'iconmngService.php', 'N', '7489d4c938769036eb2046e75cf7e516', 9023, 'ASYNC', 1.44, 0.10, '20200419113620', '20200419213015'),
+(3, 106, 3785, 3726, 'HTML', 'iconmngView.php', 'N', '01bc4e19abc71ed1c314c3dbe54fdf89', 20140, 'ASYNC', 4.95, 0.35, '20200419213006', '20200419213139'),
+(3, 106, 3786, 3727, 'HTMLJS', 'iconmng.js', 'N', '8eb1733e960f029905ebf38c4c6e6ea3', 49297, 'ASYNC', 6.90, 0.58, '20200419213013', '20200419213152'),
+(3, 106, 3787, 3728, 'SVRSVC', 'iconmngService.php', 'N', '7489d4c938769036eb2046e75cf7e516', 9023, 'ASYNC', 1.35, 0.24, '20200419213015', '20200419213141'),
+(3, 106, 3788, 3729, 'SVRDAO', 'iconmngDao.php', 'N', '146620d78d4b3dea50ded77f8effc9dc', 1770, 'ASYNC', 0.48, 0.09, '20200419213016', '20200419213140'),
+(3, 106, 3789, 3730, 'SVRCTL', 'iconmngController.php', 'N', '3b6c2aa9d3c5e3fcc15261df294b70df', 10297, 'ASYNC', 2.45, 0.16, '20200419213019', '20200419213144'),
+(3, 106, 3790, 3731, 'HTML', 'iconmngView.php', 'N', '7e6d831fddd489410bcc0e189d007704', 20140, 'ASYNC', 4.07, 0.30, '20200419213139', '20200419214234'),
+(3, 106, 3791, 3732, 'SVRDAO', 'iconmngDao.php', 'N', 'fc3b0731b6c7d22b0fbd23b37516da89', 1770, 'ASYNC', 0.55, 0.04, '20200419213140', '20200419214229'),
+(3, 106, 3792, 3733, 'SVRSVC', 'iconmngService.php', 'N', '7489d4c938769036eb2046e75cf7e516', 9023, 'ASYNC', 1.33, 0.11, '20200419213141', '20200419214246'),
+(3, 106, 3793, 3734, 'SVRCTL', 'iconmngController.php', 'N', 'c0a4f784210c56a3e2451189e98421b5', 10297, 'ASYNC', 2.20, 0.20, '20200419213144', '20200419214244'),
+(3, 106, 3794, 3735, 'HTMLJS', 'iconmng.js', 'N', '6a9173768f9a82a65d312fc0968eb894', 49297, 'ASYNC', 7.09, 0.80, '20200419213152', '20200419214242'),
+(3, 106, 3795, 3736, 'SVRDAO', 'iconmngDao.php', 'N', 'fc3b0731b6c7d22b0fbd23b37516da89', 1770, 'ASYNC', 0.44, 0.06, '20200419214229', '20200419214722'),
+(3, 106, 3796, 3737, 'HTML', 'iconmngView.php', 'N', '752c28012f09f8bdfb072e1914fdb89e', 20632, 'ASYNC', 4.45, 0.29, '20200419214234', '20200419214712'),
+(3, 106, 3797, 3738, 'HTMLJS', 'iconmng.js', 'N', 'a311a80384c666581acb1572582b0e18', 49297, 'ASYNC', 6.91, 0.69, '20200419214242', '20200419214720'),
+(3, 106, 3798, 3739, 'SVRCTL', 'iconmngController.php', 'N', 'c0a4f784210c56a3e2451189e98421b5', 10297, 'ASYNC', 2.40, 0.26, '20200419214244', '20200419214707'),
+(3, 106, 3799, 3740, 'SVRSVC', 'iconmngService.php', 'N', '7489d4c938769036eb2046e75cf7e516', 9023, 'ASYNC', 1.54, 0.14, '20200419214246', '20200419214722'),
+(3, 106, 3800, 3741, 'SVRCTL', 'iconmngController.php', 'N', 'c0a4f784210c56a3e2451189e98421b5', 10297, 'ASYNC', 2.72, 0.15, '20200419214707', '20200419215530'),
+(3, 106, 3801, 3742, 'HTML', 'iconmngView.php', 'N', '6a6b3022800df0cd71b2f67f2a525292', 20668, 'ASYNC', 4.41, 0.42, '20200419214712', '20200419215545'),
+(3, 106, 3802, 3743, 'HTMLJS', 'iconmng.js', 'N', 'a311a80384c666581acb1572582b0e18', 49297, 'ASYNC', 6.76, 0.45, '20200419214720', '20200419215540'),
+(3, 106, 3803, 3744, 'SVRSVC', 'iconmngService.php', 'N', '7489d4c938769036eb2046e75cf7e516', 9023, 'ASYNC', 1.45, 0.12, '20200419214722', '20200419215533'),
+(3, 106, 3804, 3745, 'SVRDAO', 'iconmngDao.php', 'N', 'fc3b0731b6c7d22b0fbd23b37516da89', 1770, 'ASYNC', 0.46, 0.08, '20200419214722', '20200419215545'),
+(3, 106, 3805, 3746, 'SVRCTL', 'iconmngController.php', 'N', 'c0a4f784210c56a3e2451189e98421b5', 10297, 'ASYNC', 3.00, 0.21, '20200419215530', '20200419220059'),
+(3, 106, 3806, 3747, 'SVRSVC', 'iconmngService.php', 'N', '7489d4c938769036eb2046e75cf7e516', 9023, 'ASYNC', 2.10, 0.12, '20200419215533', '20200419220053'),
+(3, 106, 3807, 3748, 'HTMLJS', 'iconmng.js', 'N', 'a311556791c3ca75e7c11c3741298e87', 49297, 'ASYNC', 6.59, 0.47, '20200419215540', '20200419220050'),
+(3, 106, 3808, 3749, 'HTML', 'iconmngView.php', 'N', '714a8878c7135201c5f5c35ac60ef52d', 20576, 'ASYNC', 4.19, 0.32, '20200419215545', '20200419220043'),
+(3, 106, 3809, 3750, 'SVRDAO', 'iconmngDao.php', 'N', 'fc3b0731b6c7d22b0fbd23b37516da89', 1770, 'ASYNC', 0.44, 0.07, '20200419215545', '20200419220100'),
+(3, 106, 3810, 3751, 'HTML', 'iconmngView.php', 'N', '5414ebcd37d213d642491822c4387dd8', 20577, 'ASYNC', 5.29, 0.40, '20200419220043', '20200419220213'),
+(3, 106, 3811, 3752, 'HTMLJS', 'iconmng.js', 'N', 'a311556791c3ca75e7c11c3741298e87', 49297, 'ASYNC', 6.86, 0.51, '20200419220051', '20200419220224'),
+(3, 106, 3812, 3753, 'SVRSVC', 'iconmngService.php', 'N', '7489d4c938769036eb2046e75cf7e516', 9023, 'ASYNC', 2.15, 0.22, '20200419220053', '20200419220215'),
+(3, 106, 3813, 3754, 'SVRCTL', 'iconmngController.php', 'N', 'c0a4f784210c56a3e2451189e98421b5', 10297, 'ASYNC', 3.90, 0.37, '20200419220059', '20200419220227'),
+(3, 106, 3814, 3755, 'SVRDAO', 'iconmngDao.php', 'N', 'fc3b0731b6c7d22b0fbd23b37516da89', 1770, 'ASYNC', 0.86, 0.08, '20200419220100', '20200419220208'),
+(3, 106, 3815, 3756, 'SVRDAO', 'iconmngDao.php', 'N', 'fc3b0731b6c7d22b0fbd23b37516da89', 1770, 'ASYNC', 0.37, 0.14, '20200419220208', '20200419220403'),
+(3, 106, 3816, 3757, 'HTML', 'iconmngView.php', 'N', 'c69f4c43e05f11db135796fcf881c27f', 20564, 'ASYNC', 4.96, 0.35, '20200419220213', '20200419220408'),
+(3, 106, 3817, 3758, 'SVRSVC', 'iconmngService.php', 'N', '7489d4c938769036eb2046e75cf7e516', 9023, 'ASYNC', 1.63, 0.11, '20200419220216', '20200419220422'),
+(3, 106, 3818, 3759, 'HTMLJS', 'iconmng.js', 'N', 'a0d151ac778726c960d0cad1aecae7f9', 49297, 'ASYNC', 7.63, 0.46, '20200419220224', '20200419220417'),
+(3, 106, 3819, 3760, 'SVRCTL', 'iconmngController.php', 'N', 'c0a4f784210c56a3e2451189e98421b5', 10297, 'ASYNC', 3.06, 0.18, '20200419220227', '20200419220420'),
+(3, 106, 3820, 3761, 'SVRDAO', 'iconmngDao.php', 'N', 'fc3b0731b6c7d22b0fbd23b37516da89', 1770, 'ASYNC', 0.39, 0.08, '20200419220403', '20200419220531'),
+(3, 106, 3821, 3762, 'HTML', 'iconmngView.php', 'N', 'e03458cc8bbd9f5d328bb125d0e18618', 20565, 'ASYNC', 4.58, 0.58, '20200419220409', '20200419220517'),
+(3, 106, 3822, 3763, 'HTMLJS', 'iconmng.js', 'N', '60133e0e40a0685258cf30819e19b6cb', 49297, 'ASYNC', 7.59, 0.42, '20200419220417', '20200419220526'),
+(3, 106, 3823, 3764, 'SVRCTL', 'iconmngController.php', 'N', 'c0a4f784210c56a3e2451189e98421b5', 10297, 'ASYNC', 2.51, 0.16, '20200419220420', '20200419220528'),
+(3, 106, 3824, 3765, 'SVRSVC', 'iconmngService.php', 'N', '7489d4c938769036eb2046e75cf7e516', 9023, 'ASYNC', 1.39, 0.13, '20200419220422', '20200419220530'),
+(3, 106, 3825, 3766, 'HTML', 'iconmngView.php', 'N', 'e03458cc8bbd9f5d328bb125d0e18618', 20565, 'ASYNC', 5.28, 0.38, '20200419220518', '20200419220718'),
+(3, 106, 3826, 3767, 'HTMLJS', 'iconmng.js', 'N', 'ab8ce6a15bc97389769a9bd5c6a9e340', 49297, 'ASYNC', 7.30, 0.54, '20200419220526', '20200419220726'),
+(3, 106, 3827, 3768, 'SVRCTL', 'iconmngController.php', 'N', 'c0a4f784210c56a3e2451189e98421b5', 10297, 'ASYNC', 2.37, 0.21, '20200419220528', '20200419220729'),
+(3, 106, 3828, 3769, 'SVRSVC', 'iconmngService.php', 'N', '7489d4c938769036eb2046e75cf7e516', 9023, 'ASYNC', 1.41, 0.11, '20200419220530', '20200419220731'),
+(3, 106, 3829, 3770, 'SVRDAO', 'iconmngDao.php', 'N', '146620d78d4b3dea50ded77f8effc9dc', 1770, 'ASYNC', 0.40, 0.07, '20200419220531', '20200419220732'),
+(3, 106, 3830, 3771, 'HTML', 'iconmngView.php', 'N', '28022f4bc8cd0037cff8d6dee4559d91', 20369, 'ASYNC', 4.75, 0.49, '20200419220718', '20200419220845'),
+(3, 106, 3831, 3772, 'HTMLJS', 'iconmng.js', 'N', 'd0bf9d9944967fec452aa4340fc1a116', 49297, 'ASYNC', 7.11, 0.35, '20200419220726', '20200419220840'),
+(3, 106, 3832, 3773, 'SVRCTL', 'iconmngController.php', 'N', 'c0a4f784210c56a3e2451189e98421b5', 10297, 'ASYNC', 2.37, 0.31, '20200419220729', '20200419220849'),
+(3, 106, 3833, 3774, 'SVRSVC', 'iconmngService.php', 'N', '7489d4c938769036eb2046e75cf7e516', 9023, 'ASYNC', 1.42, 0.11, '20200419220731', '20200419220851'),
+(3, 106, 3834, 3775, 'SVRDAO', 'iconmngDao.php', 'N', '146620d78d4b3dea50ded77f8effc9dc', 1770, 'ASYNC', 0.36, 0.07, '20200419220732', '20200419220846'),
+(3, 106, 3835, 3776, 'HTMLJS', 'iconmng.js', 'N', 'c62bbe4f150538b48c593ac3d323fa76', 49297, 'ASYNC', 6.92, 0.62, '20200419220841', '20200419221921'),
+(3, 106, 3836, 3777, 'HTML', 'iconmngView.php', 'N', '6c49e554056c62f45144eae819e5b259', 20310, 'ASYNC', 3.59, 0.39, '20200419220845', '20200419221907'),
+(3, 106, 3837, 3778, 'SVRDAO', 'iconmngDao.php', 'N', '146620d78d4b3dea50ded77f8effc9dc', 1770, 'ASYNC', 0.50, 0.09, '20200419220846', '20200419221910'),
+(3, 106, 3838, 3779, 'SVRCTL', 'iconmngController.php', 'N', 'c0a4f784210c56a3e2451189e98421b5', 10297, 'ASYNC', 2.40, 0.29, '20200419220849', '20200419221913'),
+(3, 106, 3839, 3780, 'SVRSVC', 'iconmngService.php', 'N', '7489d4c938769036eb2046e75cf7e516', 9023, 'ASYNC', 1.48, 0.13, '20200419220851', '20200419221923'),
+(3, 106, 3840, 3781, 'HTML', 'iconmngView.php', 'Y', '6c49e554056c62f45144eae819e5b259', 20310, 'ASYNC', 4.98, 0.67, '20200419221907', NULL),
+(3, 106, 3841, 3782, 'SVRDAO', 'iconmngDao.php', 'Y', '146620d78d4b3dea50ded77f8effc9dc', 1770, 'ASYNC', 1.63, 0.16, '20200419221910', NULL),
+(3, 106, 3842, 3783, 'SVRCTL', 'iconmngController.php', 'Y', 'c0a4f784210c56a3e2451189e98421b5', 10297, 'ASYNC', 2.46, 0.17, '20200419221913', NULL),
+(3, 106, 3843, 3784, 'HTMLJS', 'iconmng.js', 'Y', '25652fdd64e4b0d0a26ac3b62bbff5ee', 49297, 'ASYNC', 7.57, 0.53, '20200419221921', NULL),
+(3, 106, 3844, 3785, 'SVRSVC', 'iconmngService.php', 'Y', '7489d4c938769036eb2046e75cf7e516', 9023, 'ASYNC', 1.56, 0.13, '20200419221923', NULL);
 
 -- --------------------------------------------------------
 
@@ -15495,7 +15585,7 @@ ALTER TABLE `CG_DD`
 -- 테이블의 AUTO_INCREMENT `CG_DDOBJ`
 --
 ALTER TABLE `CG_DDOBJ`
-  MODIFY `DDOBJSEQ` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1766;
+  MODIFY `DDOBJSEQ` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1781;
 
 --
 -- 테이블의 AUTO_INCREMENT `CG_ICONMNG`
@@ -15507,7 +15597,7 @@ ALTER TABLE `CG_ICONMNG`
 -- 테이블의 AUTO_INCREMENT `CG_MONOLOG`
 --
 ALTER TABLE `CG_MONOLOG`
-  MODIFY `LOGSEQ` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `LOGSEQ` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- 테이블의 AUTO_INCREMENT `CG_PGMEVT`
@@ -15561,7 +15651,7 @@ ALTER TABLE `CG_PGMSQL`
 -- 테이블의 AUTO_INCREMENT `CG_PGMSQLD`
 --
 ALTER TABLE `CG_PGMSQLD`
-  MODIFY `COLSEQ` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12356;
+  MODIFY `COLSEQ` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12388;
 
 --
 -- 테이블의 AUTO_INCREMENT `CG_PGMSQLR`
@@ -15579,7 +15669,7 @@ ALTER TABLE `CG_PGMSVC`
 -- 테이블의 AUTO_INCREMENT `CG_PGMVER`
 --
 ALTER TABLE `CG_PGMVER`
-  MODIFY `VERSEQ` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3785;
+  MODIFY `VERSEQ` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3845;
 
 --
 -- 테이블의 AUTO_INCREMENT `CG_PJTCFG`
@@ -15597,7 +15687,7 @@ ALTER TABLE `CG_PJTFILE`
 -- 테이블의 AUTO_INCREMENT `CG_RSTFILE`
 --
 ALTER TABLE `CG_RSTFILE`
-  MODIFY `FILESEQ` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3726;
+  MODIFY `FILESEQ` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3786;
 
 --
 -- 테이블의 AUTO_INCREMENT `CG_VALID`
