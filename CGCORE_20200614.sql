@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 172.17.0.1:3306
--- 생성 시간: 20-06-14 05:59
+-- 생성 시간: 20-06-14 12:48
 -- 서버 버전: 5.7.20
 -- PHP 버전: 7.4.0
 
@@ -1492,7 +1492,7 @@ INSERT INTO `CG_OBJINFOA` (`OBJTYPE`, `OBJDSEQ`, `OBJASEQ`, `OBJAORD`, `OBJDESC`
 INSERT INTO `CG_OBJINFOA` (`OBJTYPE`, `OBJDSEQ`, `OBJASEQ`, `OBJAORD`, `OBJDESC`, `SRCTXT`, `SPTTXT`, `INPUT`, `PARAM`, `SRCTYPE`, `FILTER`, `DEBUGYN`, `ADDDT`, `MODDT`) VALUES
 ('GRIDJQX', 1676, 1998, 100, '객체생성1', '        //filter type\n        //   \'textbox\' - basic text field.\n         //    \'input\' - input field with dropdownlist for choosing the filter condition. *Only when \"showfilterrow\" is true.\n        //     \'checkedlist\' - dropdownlist with checkboxes that specify which records should be visible and hidden.\n        //     \'list\' - dropdownlist which specifies the visible records depending on the selection.\n        //     \'number\' - numeric input field. *Only when \"showfilterrow\" is true.\n        //     \'bool\' - filter for boolean data. *Only when \"showfilterrow\" is true.\n         //    \'date\' - filter for dates.\n\n		$(window).resize(function() {\n			//alert($(\"#divGrpG2\").width());\n			$(\'#jqxgrid{G.GRPID}\').jqxGrid({ width: (Math.round($(\"#divGrp{G.GRPID}\").width()) - 8) });\n		});\n\n        // initialize jqxGrid\n        $(\"#jqxgrid{G.GRPID}\").jqxGrid(\n        {\n            ready: function(){},\n            filter: gridFilter{G.GRPID},\n            width: (Math.round($(\"#divGrp{G.GRPID}\").width()) - 8),     //default width : 600\n            localization: getLocalization(),\n            //autoshowloadelement: true,\n            //source: dataAdapterGrid,    \n            columnsheight: 26, //헤더 높이 default 32\n            filterrowheight: 37, //필터 높이 default 37 (jqxgrid.filter.js 에 input필드 인라인으로 margin 4px가 하드코딩 됨.ㅠㅠ)\n            rowsheight: 26, //데이터의행 높이\n            height: parseInt(\'{G.GRPHEIGHT-45}\'),  //default height : 400          \n            pageable: false,\n            autoheight: false,\n            sortable: true,\n            altrows: true,\n            enabletooltips: true,\n            editable: true,\n            showfilterrow: {G.FILTER_BOOL},\n            filterable: {G.FILTER_BOOL},\n            editmode: \'dblclick\', //click, dblclick, selectedcell, selectedrow\n            columnsresize: true,\n            selectionmode: \'checkbox\', //\'none\', \'singlerow\', \'multiplerows\', \'multiplerowsextended\', \n			handlekeyboardnavigation: function (event) {\n				alog(\"handlekeyboardnavigation()..........................start\");\n				var key = event.charCode ? event.charCode : event.keyCode ? event.keyCode : 0;\n\n				if (key == 13) {\n					if(event.target.localName == \"textarea\"){\n						if(event.shiftKey){\n							throw \'throw error is new line ok\';\n						}\n					}\n				}  \n			},\n			columns: [\n', '', '', '', 'R', '', '', '20200520055832', '20200614145036'),
 ('GRIDJQX', 1676, 1999, 110, '객체생성2 컬럼', '', '', 'PGMIO', '', 'L', '', '', '20200520055832', '20200520061935'),
-('GRIDJQX', 1676, 2000, 120, '객체생성3', '            ]\n        });\n\n		//가로사이즈 초기화\n		//$(\'#jqxgrid{G.GRPID}\').jqxGrid({ width: (Math.round($(\"#divGrp{G.GRPID}\").width()) - 8) });\n', '', '', '', 'R', '', '', '20200520055832', '20200524145341'),
+('GRIDJQX', 1676, 2000, 120, '객체생성3', '            ]\n        });\n', '', '', '', 'R', '', '', '20200520055832', '20200614214404'),
 ('GRIDJQX', 1676, 2001, 200, '이벤트rowclick', '	$(\'#jqxgrid{G.GRPID}\').on(\'rowclick\', function (event) {\n		alog(\"jwxgrid{G.GRPID} rowclick()......................start\");\n		alog(event);\n		//체크박스일때랑 \n		var args = event.args;\n		// row\'s bound index.\n		var boundIndex = args.rowindex;\n		// row\'s visible index.\n		var visibleIndex = args.visibleindex;\n		// right click.\n		var rightclick = args.rightclick; \n		// original event.\n		var ev = args.originalEvent;       \n\n', '', '', '', 'R', '', '', '20200520055832', '20200524141249'),
 ('GRIDJQX', 1676, 2002, 35, '컬럼(데이터,OBJ)', '//##################################################################\n//##    컬럼 데이터 및 오브젝트\n//##################################################################\n', '', '', '', 'R', '', '', '20200520063849', '20200521062513'),
 ('GRIDJQX', 1676, 2003, 999, '', '  alog(\"{G.GRPID}_INIT()-------------------------end\");\n}', '', '', '', 'R', '', '', '20200520072425', NULL),
@@ -1625,7 +1625,8 @@ INSERT INTO `CG_OBJINFOA` (`OBJTYPE`, `OBJDSEQ`, `OBJASEQ`, `OBJAORD`, `OBJDESC`
 ('GRIDWIX', 1714, 2131, 70, '', '', '', '', '', 'R', '', '', '20200607171719', '20200607171731'),
 ('GRIDWIX', 1714, 2132, 80, '', '		$tmpVal = requireGridwixSaveArray($GRID[\"COLORD\"],$GRID[\"JSON\"],$GRID[\"SQL\"]);\n		if($tmpVal->RTN_CD == \"500\"){\n			$log->info(\"requireGrid - fail.\");\n			$tmpVal->GRPID = $grpId;\n			echo json_encode($tmpVal);\n			exit;\n		}\n', '', '', '', 'R', '', '', '20200607171719', '20200607171833'),
 ('GRIDWIX', 1714, 2133, 90, '', '		$tmpVal = makeGridwixSaveJsonArray($GRID,$this->DB);\n		array_push($_RTIME,array(\"[TIME 50.DB_TIME {V.SVCGRPID}]\",microtime(true)));\n\n		$tmpVal->GRPID = $grpId;\n		array_push($rtnVal->GRP_DATA, $tmpVal);\n', '', '', '', 'R', '', '', '20200607171719', '20200607171833'),
-('GRIDWIX', 1714, 2134, 100, '', '		//GRID_CHKSAVE____________________________end\n', '', '', '', 'R', '', '', '20200607171719', '20200607171833');
+('GRIDWIX', 1714, 2134, 100, '', '		//GRID_CHKSAVE____________________________end\n', '', '', '', 'R', '', '', '20200607171719', '20200607171833'),
+('GRIDJQX', 1676, 2135, 190, '이벤트-mousedown', '	//textarea 팝업오픈시 텍스트영역 또는 스크롤영역 클릭시 숨김처리되는거 방지\n	$(\"#jqxgrid{G.GRPID}\").on(\'mousedown\', function (event) {\n		alog(\"jwxgridG2 mousedown()......................start\");\n		alog(event);\n		//alog(event.target.className.indexOf(\"scrollbar-thumb-state-normal\"));\n		if(event.target.localName == \"textarea\" ||\n			(\n				event.target.localName == \"div\" \n				&& event.target.className.indexOf(\"scrollbar-thumb-state-normal\") > 0\n			)\n		){\n			//return;\n			throw \'mousedown textarea no hide.\';\n		}\n\n	});\n', '', '', '', 'R', '', '', '20200614214447', '20200614214630');
 
 -- --------------------------------------------------------
 
@@ -2786,7 +2787,7 @@ ALTER TABLE `CG_OBJINFO`
 -- 테이블의 AUTO_INCREMENT `CG_OBJINFOA`
 --
 ALTER TABLE `CG_OBJINFOA`
-  MODIFY `OBJASEQ` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2135;
+  MODIFY `OBJASEQ` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2136;
 
 --
 -- 테이블의 AUTO_INCREMENT `CG_OBJINFOB`
