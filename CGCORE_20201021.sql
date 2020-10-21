@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 172.17.0.1:3306
--- 생성 시간: 20-10-21 05:15
+-- 생성 시간: 20-10-21 09:09
 -- 서버 버전: 5.7.20
 -- PHP 버전: 7.4.0
 
@@ -75,6 +75,7 @@ INSERT INTO `CG_CODE` (`PCD`, `PNM`, `PCDDESC`, `ORD`, `UITOOL`, `USEYN`, `DELYN
 ('EVTCHARTBAR', '이벤트CHARTBAR', '', 1, '', 'Y', 'N', '20200313040746', NULL),
 ('EVTGRID', '이벤트 GRID', '', 1, '', 'Y', 'N', '20191223111320', NULL),
 ('EVTGRIDWIX', '이벤트', '', 10, '', 'Y', 'N', '20200711212226', NULL),
+('FILESTORE_ACL', '파일저장소', '', 11, '', 'Y', 'N', '20201021141943', NULL),
 ('FILETYPE', '파일타입', '', 35, '', 'Y', 'N', '20141103153514', NULL),
 ('FILTER', '필터 GRID', '', 1, '', 'Y', 'N', '20200505105448', '20200505111115'),
 ('FILTERGRIDJQX', '필터JQXGRID', '', 10, '', 'Y', 'N', '20200520065730', NULL),
@@ -625,7 +626,10 @@ INSERT INTO `CG_CODED` (`CODED_SEQ`, `CD`, `NM`, `CDDESC`, `PCD`, `ORD`, `CDVAL`
 (484, 'ANYSELECT', '드랍다운(ANYSELECT)', '', 'CTFORMVIEW', 170, '', '', '', '', 'RW', '', '', 'Y', 'N', '20200913094140', NULL),
 (485, 'NONE', '평문', '', 'CRYPT_WIX', 1, '', '', '', '', '', '', '', 'Y', 'N', '20200914205155', NULL),
 (486, 'CRYPT', 'aes', '', 'CRYPT_WIX', 2, '<img src=\'\" + CFG_URL_LIBS_ROOT + \"img/crypt_shield.png\' align=\'absmiddle\'>', '', '', '', '', '', '', 'Y', 'N', '20200914205156', '20200914205407'),
-(487, 'HASH', 'sha', '', 'CRYPT_WIX', 3, '<img src=\'\" + CFG_URL_LIBS_ROOT + \"img/crypt_lock.png\' align=\'absmiddle\'>', '', '', '', '', '', '', 'Y', 'N', '20200914205156', '20200914205407');
+(487, 'HASH', 'sha', '', 'CRYPT_WIX', 3, '<img src=\'\" + CFG_URL_LIBS_ROOT + \"img/crypt_lock.png\' align=\'absmiddle\'>', '', '', '', '', '', '', 'Y', 'N', '20200914205156', '20200914205407'),
+(488, 'private', 'private', '', 'FILESTORE_ACL', 10, '', '', '', '', '', '', '', 'Y', 'N', '20201021142052', NULL),
+(489, 'public-read', 'public-read', '', 'FILESTORE_ACL', 20, '', '', '', '', '', '', '', 'Y', 'N', '20201021142052', NULL),
+(490, 'public-read-write', 'public-read-write', '', 'FILESTORE_ACL', 30, '', '', '', '', '', '', '', 'Y', 'N', '20201021142052', NULL);
 
 -- --------------------------------------------------------
 
@@ -3064,7 +3068,7 @@ ALTER TABLE `CG_SVR`
 -- 테이블의 AUTO_INCREMENT `CG_CODED`
 --
 ALTER TABLE `CG_CODED`
-  MODIFY `CODED_SEQ` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=488;
+  MODIFY `CODED_SEQ` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=491;
 
 --
 -- 테이블의 AUTO_INCREMENT `CG_FILESTORE`
