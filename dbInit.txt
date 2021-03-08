@@ -12,3 +12,26 @@ GRANT ALL PRIVILEGES ON db_zero12a.* TO 'usr_zero12a'@'localhost' WITH GRANT OPT
 
 
 ## web 폴더 생성
+
+DELIMITER $$
+
+    CREATE TRIGGER autoTeamInsert
+        BEFORE INSERT ON CMN_USR
+        FOR EACH ROW
+        BEGIN
+            DECLARE tmpTeamCd VARCHAR(50);
+            DECLARE tmpTeamNm VARCHAR(50);
+            
+            SET tmpTeamCd = NEW.TEAMCD;
+            SET tmpTeamNm = NEW.TEAMNM;
+
+            INSERT INTO CMN_TEAM ( TEAMCD, TEAMNM, INTRO_PGMID, ADD_DT, ADD_ID) 
+            SELECT tmpTeamCd, tmpTeamNm, '', date_format(sysdate(),'%Y%m%d%H%i%s'), 0
+            FROM DUAL
+            WHERE 0 = (
+                SELECT COUNT(*) CNT FROM CMN_TEAM WHERE TEAMCD = tmpTeamCd
+            );
+
+        END $$
+
+DELIMITER ;
