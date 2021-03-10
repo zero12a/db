@@ -28,7 +28,10 @@ DELIMITER $$
             INSERT INTO CMN_TEAM ( TEAMCD, TEAMNM, INTRO_PGMID, ADD_DT, ADD_ID) 
             SELECT tmpTeamCd, tmpTeamNm, '', date_format(sysdate(),'%Y%m%d%H%i%s'), 0
             FROM DUAL
-            WHERE 0 = (
+            WHERE
+            TEAMCD IS NOT NULL 
+            AND TEAMCD <> ''
+            AND 0 = (
                 SELECT COUNT(*) CNT FROM CMN_TEAM WHERE TEAMCD = tmpTeamCd
             );
 
